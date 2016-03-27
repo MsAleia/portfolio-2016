@@ -158,7 +158,8 @@ li {
   display: inline; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: inherit; }
 
 /* ==========================================================================
    Author's custom styles
@@ -376,15 +377,21 @@ footer i:hover {
 
 .aleia-tagline,
 .edu-bio {
-  margin: 1rem 0; }
+  margin: 1rem 0;
+  line-height: 1.25; }
 
 .current-bio {
-  background-color: #EFFFE9;
-  width: 80%; }
+  background-color: rgba(239, 255, 233, 0.5);
+  padding: 5%;
+  margin: 1.25% 0; }
 
 .bio-title {
   font-size: 1.5rem;
-  margin: 1rem 0; }
+  line-height: 2; }
+
+.bio-copy {
+  width: 90%;
+  line-height: 1.5; }
 
 .spacer-b {
   background-color: #2EC4B6;
@@ -395,7 +402,13 @@ footer i:hover {
   margin: 1rem 0; }
 
 .likes-para {
-  margin: 1rem 0; }
+  margin: 1rem 0;
+  line-height: 1.25; }
+
+.likes:hover {
+  background-color: rgba(49, 196, 182, 0.75);
+  font-weight: bold;
+  color: white; }
 
 .aleia-link {
   font-family: "Montserrat", sans-serif;
@@ -503,7 +516,10 @@ footer i:hover {
     justify-content: space-around; }
 
   .hire-me {
-    width: 35%; } }
+    width: 35%; }
+
+  .current-bio {
+    padding: 2.5%; } }
 @media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */ }
 /* ==========================================================================

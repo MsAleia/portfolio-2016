@@ -198,6 +198,7 @@ li{
 }
 a{
     text-decoration: none;
+    color: inherit;
 }
 /* ==========================================================================
    Author's custom styles
@@ -416,14 +417,20 @@ footer i:hover{
 .aleia-tagline,
 .edu-bio{
   margin: $base-margin;
+  line-height: 1.25;
 }
 .current-bio{
-  background-color: $light-accent;
-  width: 80%;
+  background-color:rgba(239, 255, 233, .5);
+  padding: 5%;
+  margin: 1.25% 0;
 }
 .bio-title{
   font-size: 1.5rem;
-  margin: $base-margin;
+  line-height: 2;
+}
+.bio-copy{
+  width: 90%;
+  line-height: 1.5;
 }
 .spacer-b{
   background-color: $dark-accent;
@@ -435,6 +442,12 @@ footer i:hover{
 }
 .likes-para{
   margin: $base-margin;
+  line-height: 1.25;
+}
+.likes:hover{
+  background-color:rgba(49, 196, 182, .75);
+  font-weight: bold;
+  color: white;
 }
 .aleia-link{
   font-family: $font-sans;
@@ -561,6 +574,9 @@ footer{
 }
 .hire-me{
   width: 35%;
+}
+.current-bio{
+  padding: 2.5%;
 }
 }
 @media print,

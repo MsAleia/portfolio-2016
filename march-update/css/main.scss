@@ -366,7 +366,6 @@ footer i:hover{
   color: $light-accent;
 }
 .title{
-  text-transform: uppercase;
   font-family: $font-display;  
   margin: 0 0 0 20vw;
 }
@@ -400,8 +399,10 @@ footer i:hover{
   align-items: center;
   justify-content: center;
 }
+// ABOUT ALEIA
 .about-me-copy{
   width: 80%;
+  line-height: 1.5;
 }
 .aleia-intro{
   font-family: $font-sans;
@@ -430,7 +431,6 @@ footer i:hover{
 }
 .bio-copy{
   width: 90%;
-  line-height: 1.5;
 }
 .spacer-b{
   background-color: $dark-accent;
@@ -456,11 +456,94 @@ footer i:hover{
   font-size: 1.5rem;
   margin: $base-margin;
 }
+// ALEIA + DEV
+.subpage-container figure{
+  margin: 2.5% 0;
+}
+.subpage-container figure img{
+  width: 100%;
+}
+.figure-duo img{
+  width: 95%;
+  height: auto;
+  display: flex;
+  display: -webkit-flex;
+  align-content: space-around;
+}
+.dev-tagline,
+.flex-copy
+{
+  margin: $base-margin;
+}
+/* ==========================================================================
+   PACKAGES
+   ========================================================================== */
+.packages-main{
+  display: flex;
+  display: -webkit-flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+.packages-wrapper{
+  width: 80%;  
+}
+.small-spacer{
+  width: 100%;
+  height: .25rem;
+}
+.packages-header{
+  margin: $base-margin;
+}
+.packages-intro{
+  font-family: $font-display;
+  color: $dark-base;
+  font-size: 3rem;
+}
+.packages-header-wrapper{
+  display: flex;
+  display: -webkit-flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
 
-
-
-
-
+/* ==========================================================================
+   PACKAGES CARD STYLES
+   ========================================================================== */
+.card{
+  background-color: white;
+  margin: 2rem 0;
+  border-radius: 10px;
+}
+.card-title{
+  background-color: $dark-base;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  padding: 40% 0 20% 0;
+  font-family: $font-sans;
+  font-weight: bold;
+  font-size: 2rem;
+  color: $light-accent;
+  border-radius: 10px 10px 0 0;
+}
+.card-copy{
+  padding: 2rem;
+  line-height: 1.25;
+}
+.card-tags{
+  font-size: .75em;
+  font-family: $font-sans-light;
+}
+.card-description{
+  margin: 5% 0;
+}
+.cost{
+  font-family: $font-sans;
+  weight: bold;
+  color: $dark-accent;
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -545,6 +628,19 @@ footer i:hover{
     /* Style adjustments for viewports that meet the condition */
 .logo{
   width: 10%;
+}
+.subpage-container figure img{
+  width: 50%;
+  height: auto;
+}
+.duo{
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+.duo figure img{
+  width: 95%;
 }
 }
 @media only screen and (min-width: 1280px) {

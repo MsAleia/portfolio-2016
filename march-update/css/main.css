@@ -523,6 +523,35 @@ footer i:hover {
   padding: 2.5% 5%; }
 
 /* ==========================================================================
+   PORTFOLIO
+   ========================================================================== */
+.portfolio-wrapper {
+  width: 80%; }
+
+.portfolio-main {
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #011627; }
+  .portfolio-main article {
+    margin: 1rem 0;
+    background-color: #F2F2F2; }
+  .portfolio-main .portfolio-header {
+    background-color: #EFFFE9;
+    padding: 1rem; }
+  .portfolio-main .portfolio-item-header {
+    font-size: 1.5rem;
+    font-family: "Montserrat", sans-serif;
+    margin: 0 0 1rem 0; }
+
+.portfolio-content {
+  padding: 1rem; }
+  .portfolio-content .content-title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.25rem; }
+
+/* ==========================================================================
    PROCESS
    ========================================================================== */
 .process-main {

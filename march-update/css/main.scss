@@ -566,6 +566,39 @@ footer i:hover{
   padding: 2.5% 5%;
 }
 /* ==========================================================================
+   PORTFOLIO
+   ========================================================================== */
+.portfolio-wrapper{
+  width: 80%;
+}
+.portfolio-main{
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $dark-base;
+    article{
+      margin: $base-margin;
+      background-color: $light-base;
+    }
+    .portfolio-header{
+      background-color: $light-accent;    
+      padding: 1rem;
+    }
+    .portfolio-item-header{
+      font-size: 1.5rem;
+      font-family: $font-sans;
+      margin: 0 0 1rem 0;
+    }
+}
+.portfolio-content{
+  padding: 1rem;
+    .content-title{
+      font-family: $font-sans;
+      font-size: 1.25rem;
+    }
+}
+/* ==========================================================================
    PROCESS
    ========================================================================== */
 .process-main{

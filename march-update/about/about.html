@@ -11,15 +11,18 @@
     
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
-        <link rel="icon" href="favicon.ico">
+        <link rel="apple-touch-icon" href="../apple-touch-icon.png">
+        <link rel="stylesheet" type="text/css" href="../fonts/MyFontsWebfontsKit/MyFontsWebfontsKit.css">
+        <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Playfair+Display:400,700' rel='stylesheet' type='text/css'>
 
-        <link rel="stylesheet" href="css/normalize.css">
-        <link rel="stylesheet" href="css/main.css">
-            <link rel="stylesheet" href="css/font-awesome.css">
-        <link rel="stylesheet" href="css/font-awesome.min.css">
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        <!-- Place favicon.ico in the root directory -->
+        <link rel="icon" href="../favicon.ico">
+
+        <link rel="stylesheet" href="../css/normalize.css">
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/font-awesome.css">
+        <link rel="stylesheet" href="../css/font-awesome.min.css">
+        <script src="../js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
     <body>
         <!--[if lt IE 8]>
@@ -27,7 +30,17 @@
         <![endif]-->
 
         <!-- Add your site or application content here -->
-            <section class="about-me">
+        <div class="wrapper">
+        <header class="page-header">
+            <figure class="logo">
+                <img src="../img/logo.svg"/>
+            </figure>
+            <figure>
+                <i class="fa fa-angle-double-down fa-3x"></i>
+            </figure>
+        </header>
+
+        <section class="about-aleia">
                 <header>
                     <figure>
                         <img src=""/>
@@ -37,49 +50,56 @@
                     </figure>
                 </header>
                 <div class="title">
-                    <a href="sub-folders/about-me.html"><h1>About Me</h1></a>
+                    <a href="sub-folders/about-aleia.html">
+                        <header>
+                            <p class="aleia-title-display">About</p>
+                            <p class="title-sans">Aleia</p>
+                        </header>
+                    </a>
                 </div>
             </section>
             <section class="about-dev">
                 <div class="title">
-                    <a href="sub-folders/about-dev.html"><h1>About Dev</h1></a>
+                    <a href="sub-folders/about-dev.html">
+                        <header>
+                            <p class="dev-title-display">Aleia</p>
+                            <p class="title-sans">+ Dev</p>
+                        </header>
+                    </a>
                 </div>
             </section>
             <footer>
-                <div class="footer-copy">
-                    <div>
-                        <p>Aleia elsewhere on the web</p>
-                    </div>
+            <div class="footer-copy">
+                <p class="hairline footer-tag">Aleia elsewhere on the web</p>
                 <ul class="social">
-                    <li id="twitter">
+                    <li>
                         <a href="http://twitter.com/msaleia">
-                            <i class="fa fa-twitter fa-2x" alt="twitter icon" title='Follow me on Twitter.'></i>
+                            <i class="fa fa-twitter fa-lg" alt="twitter icon"></i>
                         </a>
                     </li>
-                    <li id="github">
+                    <li>
                         <a href="http://github.com/msaleia">
-                            <i class="fa fa-github-alt fa-2x" alt="GitHub icon" title='Review my code!'></i>
+                            <i class="fa fa-github-alt fa-lg" alt="GitHub icon"></i>
                         </a>
                     </li>
-                    <li id="linkedin">
+                    <li>
                         <a href="http://linkedin.com/in/aleiawalker">
-                            <i class="fa fa-linkedin fa-2x" alt="linkedin icon" title='Add me on LinkedIn.'></i>
+                            <i class="fa fa-linkedin fa-lg" alt="linkedin icon"></i>
                         </a>
                     </li>
-                    <li id="behance">
+                    <li>
                         <a href="http://behance.net/aleiawalker">
-                            <i class="fa fa-github-alt fa-2x" alt="GitHub icon" title='Review my code!'></i>
+                            <i class="fa fa-behance fa-lg" alt="Behance icon"></i>
                         </a>
                     </li>
-                    <li id="email">
+                    <li>
                         <a href="mailto:aleia@aleiawalker.com">
-                            <i class="fa fa-envelope fa-2x" alt="email icon" title='Send me an email about your next project or position!'></i>
+                            <i class="fa fa-envelope fa-lg" alt="email icon"></i>
                         </a>
                     </li>
                 </ul>
-                </div>
             </footer>
-
+</div>
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>

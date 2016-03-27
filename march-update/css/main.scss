@@ -167,19 +167,18 @@ $font-sans: 'Montserrat', sans-serif;
 $font-sans-light: 'Montserrat Light', sans-serif;
 $font-sans-hairline: 'Montserrat Hairline', sans-serif;
 
+$base-margin: 1rem 0;
+
 button{
-    text-transform: uppercase;
-    font-family: $font-sans;
-    background-color: $light-accent;
-    border: none;
-    width: 100%;
-    font-size: 2rem;
-}
-button p{
-    margin:0;
+  text-transform: uppercase;
+  font-family: $font-sans;
+  background-color: $light-accent;
+  border: none;
+  width: 100%;
+  font-size: 2rem;
 }
 .uppercase{
-    text-transform: uppercase;
+  text-transform: uppercase;
 }
 .accent-word{
     font-weight: bold;
@@ -220,118 +219,230 @@ body{
     min-height: 100vh;
     flex-direction: column;
 }
-
 .wrapper {
   flex: 1;
 }
-
+.page-header{
+  background-color: $dark-base;
+  color: $light-base;    
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vh 5vw;
+  width: 90vw;
+  height: 8vh;
+}
 .hero{
-    background-color: $dark-base;
-    font-family: $font-sans;
-    height: 100vh;
-    display: flex;
-    display: -webkit-flex;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background-color: $dark-base;  
+  font-family: $font-sans;
+  height: 90vh;
+  display: flex;
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.logo{
+  width: 25%;
 }
 .hero-copy-wrapper{
-    display: flex;
-    display: -webkit-flex;
+  display: flex;
+  display: -webkit-flex;
 }
 .hero-intro{
-    color: $light-base;
-    font-size: 2.5rem;
+  color: $light-base;
+  font-size: 2.5rem;
 }
 .hero h1{
-    font-family: $font-display;
-    color: $light-accent;
-    font-size: 3rem;
+  font-family: $font-display;
+  color: $light-accent;
+  font-size: 3rem;
 }
 .hero-tagline{
-    color: $dark-accent;
-    font-size: 1.2rem;
+  color: $dark-accent;    
+  font-size: 1.2rem;
 }
 /* ==========================================================================
    Main Body
    ========================================================================== */
 .intro-body{
-    font-family: $font-sans;
-    height: 75%;
-    width: 100%;    
+  font-family: $font-sans;
+  width: 100%;    
 }
 .main-container{
-    width: 100%;
-    height: 75vh;
-    display: flex;
-    display: -webkit-flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
-    padding: 7.5vh 0;
-}
-.hire-me{
-    width: 60%;
-    color: $dark-base;
+  width: 100%;
+  height: 75vh;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  padding: 7.5vh 0;
 }
 .hire-intro{
-    width: 100%;
-    height: 25vh;
-    display: flex;
-    display: -webkit-flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
+  width: 100%;
+  height: 25vh;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
 }
-.links{
-    line-height: 2.5;
+.hire-me{
+  width: 60%;
+  margin: 2.5% 0;
+}
+.hire-me button{
+  color: $dark-base;
+  padding: .25em 0;
 }
 .hire-copy{
-    margin: 0;
-    padding: 0;
+  line-height: 1.25em;
+  padding: 0;
+}
+.links{
+  line-height: 2.5;
+  font-family: $font-sans-light;
+}
+.links a{
+  color: $dark-accent;    
+  font-family: $font-sans;
 }
 /* ==========================================================================
    Footer
    ========================================================================== */
 footer{
-    background-color: $light-accent;
-    font-family: $font-sans;
-    height: 10vh;
-    width: 100%;
-    font-size: 1rem;
-    display: flex;
-    display: -webkit-flex;
+  background-color: $light-accent;
+  font-family: $font-sans;
+  height: 10vh;
+  width: 100%;
+  font-size: 1rem;
+  display: flex;
+  display: -webkit-flex;
+  font-size: .9rem;
 }
 .footer-tag{
     width: 60%;
 }
 .social{
-    display: flex;
-    display: -webkit-flex;
-    width: 35%;
-    align-items: center;
+  display: flex;
+  display: -webkit-flex;
+  width: 35%;
+  align-items: center;
 }
 .footer-copy{
-    display: flex;
-    display: -webkit-flex;
-    display: -webkit-flex;
-    align-items: center;
-    flex-wrap: nowrap;
-    width: 100%;
-    justify-content: space-around;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 100%;
+  justify-content: space-around;
 }
 footer i{
-    color: $text-base;
-    margin: 0 .25rem;
+  color: $text-base;
+  margin: 0 .25rem;
 }
-
-
-
-
-
-
-
-
+footer i:hover{
+  color: $dark-accent;
+}
+/* ==========================================================================
+   ABOUT PAGE
+   ========================================================================== */
+.about-aleia,
+.about-dev{
+  height: 40vh;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;  
+}
+.about-aleia{
+  background-color: $light-accent;
+  color: $dark-base;
+}
+.about-dev{
+  background-color: $dark-base;
+  color: $light-accent;
+}
+.title{
+  text-transform: uppercase;
+  font-family: $font-display;  
+  margin: 0 0 0 20vw;
+}
+.title header{
+  font-size: 3rem;
+}
+.aleia-title-display{
+    color: $dark-base;
+}
+.dev-title-display{
+    color: $light-accent;
+}
+.title-sans{
+  font-family: $font-sans;
+  color: $dark-accent;
+  font-weight: bold;
+}
+/* ==========================================================================
+   ABOUT SUB-PAGES
+   ========================================================================== */
+.about-aleia-subpage{
+  background-color: $light-base;
+  color: $text-base;
+  font-family: $font-serif;
+}
+.subpage-container{
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: row wrap;
+  -webkit-flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+.about-me-copy{
+  width: 80%;
+}
+.aleia-intro{
+  font-family: $font-sans;
+  font-weight: bold;
+  color: $dark-base;
+  font-size: 3rem;
+  margin: $base-margin;
+}
+.spacer-a{
+  background-color: white;
+  height: .125rem;
+}
+.aleia-tagline,
+.edu-bio{
+  margin: $base-margin;
+}
+.current-bio{
+  background-color: $light-accent;
+  width: 80%;
+}
+.bio-title{
+  font-size: 1.5rem;
+  margin: $base-margin;
+}
+.spacer-b{
+  background-color: $dark-accent;
+  height: .25rem;
+}
+.future{
+  font-size: 2rem;
+  margin: $base-margin;
+}
+.likes-para{
+  margin: $base-margin;
+}
+.aleia-link{
+  font-family: $font-sans;
+  font-weight: bold;
+  color: $dark-base;
+  font-size: 1.5rem;
+  margin: $base-margin;
+}
 
 
 
@@ -417,10 +528,41 @@ footer i{
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
+@media only screen and (min-width: 768px) {
     /* Style adjustments for viewports that meet the condition */
+.logo{
+  width: 10%;
 }
-
+}
+@media only screen and (min-width: 1280px) {
+footer{
+  padding: .5em 0;
+}
+.footer-copy{
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.25rem;
+  width: 100%;
+}
+.social{
+  justify-content: center;
+  padding: .5em 0 0 0;
+}
+.social li{
+  margin: 0 .25em;
+}
+.intro-body{
+  font-size: 1.25rem;
+}
+.hire-intro{
+  flex-direction: row;
+  justify-content: space-around;
+}
+.hire-me{
+  width: 35%;
+}
+}
 @media print,
        (-webkit-min-device-pixel-ratio: 1.25),
        (min-resolution: 1.25dppx),

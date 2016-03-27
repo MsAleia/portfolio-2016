@@ -138,9 +138,6 @@ button {
   width: 100%;
   font-size: 2rem; }
 
-button p {
-  margin: 0; }
-
 .uppercase {
   text-transform: uppercase; }
 
@@ -186,15 +183,29 @@ body {
 .wrapper {
   flex: 1; }
 
+.page-header {
+  background-color: #011627;
+  color: #F2F2F2;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vh 5vw;
+  width: 90vw;
+  height: 8vh; }
+
 .hero {
   background-color: #011627;
   font-family: "Montserrat", sans-serif;
-  height: 100vh;
+  height: 90vh;
   display: flex;
   display: -webkit-flex;
   display: flex;
   align-items: center;
   justify-content: center; }
+
+.logo {
+  width: 25%; }
 
 .hero-copy-wrapper {
   display: flex;
@@ -218,7 +229,6 @@ body {
    ========================================================================== */
 .intro-body {
   font-family: "Montserrat", sans-serif;
-  height: 75%;
   width: 100%; }
 
 .main-container {
@@ -227,13 +237,9 @@ body {
   display: flex;
   display: -webkit-flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-direction: column;
   padding: 7.5vh 0; }
-
-.hire-me {
-  width: 60%;
-  color: #011627; }
 
 .hire-intro {
   width: 100%;
@@ -241,15 +247,28 @@ body {
   display: flex;
   display: -webkit-flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-direction: column; }
 
-.links {
-  line-height: 2.5; }
+.hire-me {
+  width: 60%;
+  margin: 2.5% 0; }
+
+.hire-me button {
+  color: #011627;
+  padding: .25em 0; }
 
 .hire-copy {
-  margin: 0;
+  line-height: 1.25em;
   padding: 0; }
+
+.links {
+  line-height: 2.5;
+  font-family: "Montserrat Light", sans-serif; }
+
+.links a {
+  color: #2EC4B6;
+  font-family: "Montserrat", sans-serif; }
 
 /* ==========================================================================
    Footer
@@ -261,7 +280,8 @@ footer {
   width: 100%;
   font-size: 1rem;
   display: flex;
-  display: -webkit-flex; }
+  display: -webkit-flex;
+  font-size: .9rem; }
 
 .footer-tag {
   width: 60%; }
@@ -275,7 +295,6 @@ footer {
 .footer-copy {
   display: flex;
   display: -webkit-flex;
-  display: -webkit-flex;
   align-items: center;
   flex-wrap: nowrap;
   width: 100%;
@@ -284,6 +303,106 @@ footer {
 footer i {
   color: #B3B3B3;
   margin: 0 .25rem; }
+
+footer i:hover {
+  color: #2EC4B6; }
+
+/* ==========================================================================
+   ABOUT PAGE
+   ========================================================================== */
+.about-aleia,
+.about-dev {
+  height: 40vh;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center; }
+
+.about-aleia {
+  background-color: #EFFFE9;
+  color: #011627; }
+
+.about-dev {
+  background-color: #011627;
+  color: #EFFFE9; }
+
+.title {
+  text-transform: uppercase;
+  font-family: NarzissRegular-Drops;
+  margin: 0 0 0 20vw; }
+
+.title header {
+  font-size: 3rem; }
+
+.aleia-title-display {
+  color: #011627; }
+
+.dev-title-display {
+  color: #EFFFE9; }
+
+.title-sans {
+  font-family: "Montserrat", sans-serif;
+  color: #2EC4B6;
+  font-weight: bold; }
+
+/* ==========================================================================
+   ABOUT SUB-PAGES
+   ========================================================================== */
+.about-aleia-subpage {
+  background-color: #F2F2F2;
+  color: #B3B3B3;
+  font-family: "Playfair Display", serif; }
+
+.subpage-container {
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: row wrap;
+  -webkit-flex-flow: row wrap;
+  align-items: center;
+  justify-content: center; }
+
+.about-me-copy {
+  width: 80%; }
+
+.aleia-intro {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: #011627;
+  font-size: 3rem;
+  margin: 1rem 0; }
+
+.spacer-a {
+  background-color: white;
+  height: .125rem; }
+
+.aleia-tagline,
+.edu-bio {
+  margin: 1rem 0; }
+
+.current-bio {
+  background-color: #EFFFE9;
+  width: 80%; }
+
+.bio-title {
+  font-size: 1.5rem;
+  margin: 1rem 0; }
+
+.spacer-b {
+  background-color: #2EC4B6;
+  height: .25rem; }
+
+.future {
+  font-size: 2rem;
+  margin: 1rem 0; }
+
+.likes-para {
+  margin: 1rem 0; }
+
+.aleia-link {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: #011627;
+  font-size: 1.5rem;
+  margin: 1rem 0; }
 
 /* ==========================================================================
    Helper classes
@@ -354,8 +473,37 @@ footer i {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */ }
+@media only screen and (min-width: 768px) {
+  /* Style adjustments for viewports that meet the condition */
+  .logo {
+    width: 10%; } }
+@media only screen and (min-width: 1280px) {
+  footer {
+    padding: .5em 0; }
+
+  .footer-copy {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.25rem;
+    width: 100%; }
+
+  .social {
+    justify-content: center;
+    padding: .5em 0 0 0; }
+
+  .social li {
+    margin: 0 .25em; }
+
+  .intro-body {
+    font-size: 1.25rem; }
+
+  .hire-intro {
+    flex-direction: row;
+    justify-content: space-around; }
+
+  .hire-me {
+    width: 35%; } }
 @media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */ }
 /* ==========================================================================

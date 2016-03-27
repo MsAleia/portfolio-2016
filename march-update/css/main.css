@@ -186,7 +186,7 @@ body {
 
 .page-header {
   background-color: #011627;
-  color: #F2F2F2;
+  color: #EFFFE9;
   display: flex;
   display: -webkit-flex;
   justify-content: space-between;
@@ -311,9 +311,22 @@ footer i:hover {
 /* ==========================================================================
    ABOUT PAGE
    ========================================================================== */
+.light-alt {
+  background-color: #EFFFE9;
+  color: #011627; }
+
+.gray-alt {
+  background-color: #F2F2F2;
+  color: #011627; }
+
+.about-aleia {
+  height: 35vh; }
+
+.about-dev {
+  height: 45vh; }
+
 .about-aleia,
 .about-dev {
-  height: 40vh;
   display: flex;
   display: -webkit-flex;
   align-items: center; }
@@ -502,6 +515,13 @@ footer i:hover {
   weight: bold;
   color: #2EC4B6; }
 
+.packages-button {
+  background-color: #F2F2F2;
+  color: #011627; }
+
+.packages-button p {
+  padding: 2.5% 5%; }
+
 /* ==========================================================================
    PROCESS
    ========================================================================== */
@@ -559,6 +579,33 @@ footer i:hover {
   font-family: "Montserrat", sans-serif;
   color: #2EC4B6;
   weight: bold; }
+
+/* ==========================================================================
+   MENU STYLES
+   ========================================================================== */
+#menu-main {
+  display: none; }
+
+.menu-active li {
+  display: block;
+  margin: 1rem 0; }
+
+.spacer {
+  width: 25vw;
+  height: .375rem;
+  background-color: #EFFFE9; }
+
+.menu-wrapper {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #011627;
+  color: #EFFFE9;
+  font-family: NarzissRegular-Drops;
+  height: 90vh;
+  font-size: 3.5rem;
+  text-align: center; }
 
 /* ==========================================================================
    Helper classes
@@ -683,6 +730,16 @@ footer i:hover {
 
   .cost {
     font-size: 1.5rem; }
+
+  .packages-button {
+    display: flex;
+    display: -webkit-flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center; }
+
+  .packages-button p {
+    padding: 1.25% 2.5%; }
 
   .not-found-main {
     padding: 2vh 4vh; } }

@@ -225,7 +225,7 @@ body{
 }
 .page-header{
   background-color: $dark-base;
-  color: $light-base;    
+  color: $light-accent;    
   display: flex;
   display: -webkit-flex;
   justify-content: space-between;
@@ -350,9 +350,22 @@ footer i:hover{
 /* ==========================================================================
    ABOUT PAGE
    ========================================================================== */
+.light-alt{
+  background-color: $light-accent;
+  color: $dark-base;
+}
+.gray-alt{
+  background-color: $light-base;
+  color: $dark-base;
+}
+.about-aleia{
+  height: 35vh;
+}
+.about-dev{
+  height: 45vh;
+}
 .about-aleia,
 .about-dev{
-  height: 40vh;
   display: flex;
   display: -webkit-flex;
   align-items: center;  
@@ -545,6 +558,13 @@ footer i:hover{
   weight: bold;
   color: $dark-accent;
 }
+.packages-button{
+  background-color: $light-base;
+  color: $dark-base;
+}
+.packages-button p{
+  padding: 2.5% 5%;
+}
 /* ==========================================================================
    PROCESS
    ========================================================================== */
@@ -609,6 +629,33 @@ footer i:hover{
     weight: bold;
   }
 }
+}
+/* ==========================================================================
+   MENU STYLES
+   ========================================================================== */
+#menu-main{ 
+  display: none;
+}
+.menu-active li{
+  display: block;
+  margin: $base-margin;
+}
+.spacer{
+  width: 25vw;
+  height: .375rem;
+  background-color: $light-accent;
+}
+.menu-wrapper{
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $dark-base;
+  color: $light-accent;
+  font-family: $font-display;
+  height: 90vh;
+  font-size: 3.5rem;
+  text-align: center;
 }
 /* ==========================================================================
    Helper classes
@@ -747,6 +794,16 @@ footer i:hover{
 }
 .cost{
   font-size: 1.5rem;
+}
+.packages-button{
+  display: flex;
+  display: -webkit-flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center; 
+}
+.packages-button p{
+  padding: 1.25% 2.5%;
 }
 // 404
 .not-found-main{

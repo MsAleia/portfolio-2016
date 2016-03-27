@@ -15,6 +15,7 @@
         <link rel="stylesheet" type="text/css" href="../fonts/MyFontsWebfontsKit/MyFontsWebfontsKit.css">
         <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Playfair+Display:400,700' rel='stylesheet' type='text/css'>
 
+        <link rel="apple-touch-icon" href="../apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
         <link rel="icon" href="../favicon.ico">
 
@@ -31,15 +32,15 @@
 
         <!-- Add your site or application content here -->
         <div class="wrapper">
-        <header class="page-header light-alt">
-            <figure class="logo">
-                <a href="../index.html"><img src="../img/logo-dark.svg"/></a>
-            </figure>
-            <figure>
-                <a id="toggle-nav" href="#"><i class="fa fa-angle-double-down fa-3x"></i></a>
-            </figure>
-        </header>
-        <section id="menu-main" class="uppercase">
+            <header class="page-header">
+                <figure class="logo">
+                    <a href="../index.html"><img src="../img/logo.svg"/></a>
+                </figure>
+                <figure>
+                    <i class="fa fa-close fa-3x"></i>
+                </figure>
+            </header>
+            <section class="menu-main uppercase">
                 <div class="menu-wrapper">
                     <ul class="menu-active">
                         <li>
@@ -49,7 +50,7 @@
                         </li>
                         <li class ="spacer"></li>
                         <li>
-                            <a href="about.html">
+                            <a href="../about/about.html">
                                 My Story
                             </a>
                         </li>
@@ -80,60 +81,9 @@
                     </ul>
                 </div>
             </section>
-            <div class="menu-hide">        
-            <section class="about-aleia">
-                <div class="title uppercase">
-                    <a href="sub-folders/about-aleia.html">
-                        <header>
-                            <p class="aleia-title-display">About</p>
-                            <p class="title-sans">Aleia</p>
-                        </header>
-                    </a>
-                </div>
-            </section>
-            <section class="about-dev">
-                <div class="title uppercase">
-                    <a href="sub-folders/about-dev.html">
-                        <header>
-                            <p class="dev-title-display">Aleia</p>
-                            <p class="title-sans">+ Dev</p>
-                        </header>
-                    </a>
-                </div>
-            </section>
-            <footer>
-            <div class="footer-copy">
-                <p class="hairline footer-tag">Aleia elsewhere on the web</p>
-                <ul class="social">
-                    <li>
-                        <a href="http://twitter.com/msaleia">
-                            <i class="fa fa-twitter fa-lg" alt="twitter icon"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://github.com/msaleia">
-                            <i class="fa fa-github-alt fa-lg" alt="GitHub icon"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://linkedin.com/in/aleiawalker">
-                            <i class="fa fa-linkedin fa-lg" alt="linkedin icon"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="http://behance.net/aleiawalker">
-                            <i class="fa fa-behance fa-lg" alt="Behance icon"></i>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="mailto:aleia@aleiawalker.com">
-                            <i class="fa fa-envelope fa-lg" alt="email icon"></i>
-                        </a>
-                    </li>
-                </ul>
-            </footer>
-            </div> <!-- menu hide -->
-        </div> <!-- wrapper -->
+        </div>
+
+
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
@@ -147,16 +97,6 @@
             e.src='https://www.google-analytics.com/analytics.js';
             r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
             ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-        </script>
-
-        <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
-        <script>
-        $(document).ready(function() {
-            $('#toggle-nav').click(function() {
-                $('#menu-main').slideToggle("slow");
-                $('.menu-hide').slideDown();
-            });
-        });                
         </script>
     </body>
 </html>

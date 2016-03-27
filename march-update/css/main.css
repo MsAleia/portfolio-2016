@@ -441,7 +441,8 @@ footer i:hover {
   display: -webkit-flex;
   flex-flow: row wrap;
   align-items: center;
-  justify-content: space-around; }
+  justify-content: space-around;
+  margin: 2rem 0; }
 
 .packages-wrapper {
   width: 80%; }
@@ -478,7 +479,7 @@ footer i:hover {
   display: flex;
   display: -webkit-flex;
   justify-content: center;
-  padding: 40% 0 20% 0;
+  padding: 6rem 0 3rem 0;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   font-size: 2rem;
@@ -500,6 +501,64 @@ footer i:hover {
   font-family: "Montserrat", sans-serif;
   weight: bold;
   color: #2EC4B6; }
+
+/* ==========================================================================
+   PROCESS
+   ========================================================================== */
+.process-main {
+  margin: 2rem 0; }
+
+.phase {
+  margin: 2rem 0; }
+
+.phase-number {
+  font-family: "Montserrat", sans-serif;
+  weight: bold;
+  color: #011627;
+  font-size: 2rem; }
+
+.phase-subtitle {
+  font-family: "Montserrat", sans-serif;
+  color: #2EC4B6;
+  font-size: 1.5rem; }
+
+.phase-copy {
+  margin: 1rem 0; }
+
+/* ==========================================================================
+   404
+   ========================================================================== */
+.not-found-main {
+  background-color: #EFFFE9;
+  color: #B3B3B3;
+  height: 86vh;
+  padding: 2vh;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  font-size: 1.5rem; }
+
+.not-found-main-wrapper {
+  height: 64vh;
+  display: flex;
+  display: -webkit-flex;
+  flex-flow: column wrap;
+  justify-content: space-between; }
+
+.not-found .not-found-btn {
+  background-color: #2EC4B6;
+  color: #011627;
+  width: 50%;
+  margin: 1rem 0 0 0; }
+  .not-found .not-found-btn p {
+    margin: 5% 0; }
+.not-found .not-found-main h1 {
+  font-size: 6rem; }
+.not-found .not-found-main h3 {
+  font-size: 3.5rem;
+  font-family: "Montserrat", sans-serif;
+  color: #2EC4B6;
+  weight: bold; }
 
 /* ==========================================================================
    Helper classes
@@ -586,7 +645,47 @@ footer i:hover {
     justify-content: space-around; }
 
   .duo figure img {
-    width: 95%; } }
+    width: 95%; }
+
+  .packages-wrapper {
+    font-size: 1.25rem; }
+
+  .packages-header-wrapper {
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center; }
+
+  .packages-header-wrapper p {
+    width: 80%; }
+
+  .packages-header-description {
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: center; }
+
+  .card-wrapper {
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: row wrap;
+    justify-content: space-between; }
+
+  .card {
+    width: 45%; }
+
+  .card-tags {
+    font-size: 1em; }
+
+  .card-description {
+    margin: 2.5% 0; }
+
+  .cost {
+    font-size: 1.5rem; }
+
+  .not-found-main {
+    padding: 2vh 4vh; } }
 @media only screen and (min-width: 1280px) {
   footer {
     padding: .5em 0; }
@@ -616,7 +715,23 @@ footer i:hover {
     width: 35%; }
 
   .current-bio {
-    padding: 2.5%; } }
+    padding: 2.5%; }
+
+  .top-shotta,
+  .entry-package {
+    width: 100%; }
+
+  .top-shotta .card-title {
+    padding: 5rem 0 2.5rem 0; }
+
+  .entry-package .card-title {
+    padding: 5rem 0 2.5rem 0; }
+
+  .packages-header-wrapper p {
+    width: 70%; }
+
+  .not-found-main {
+    padding: 2vh 8vh; } }
 @media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */ }
 /* ==========================================================================

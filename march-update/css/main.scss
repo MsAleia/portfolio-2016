@@ -483,7 +483,8 @@ footer i:hover{
   display: -webkit-flex;
   flex-flow: row wrap;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-around;  
+  margin: 2rem 0;
 }
 .packages-wrapper{
   width: 80%;  
@@ -521,7 +522,7 @@ footer i:hover{
   display: flex;
   display: -webkit-flex;
   justify-content: center;
-  padding: 40% 0 20% 0;
+  padding: 6rem 0 3rem 0;
   font-family: $font-sans;
   font-weight: bold;
   font-size: 2rem;
@@ -543,6 +544,71 @@ footer i:hover{
   font-family: $font-sans;
   weight: bold;
   color: $dark-accent;
+}
+/* ==========================================================================
+   PROCESS
+   ========================================================================== */
+.process-main{
+  margin: 2rem 0;
+}
+.phase{
+  margin: 2rem 0;
+}
+.phase-number{
+  font-family: $font-sans;
+  weight: bold;
+  color: $dark-base;
+  font-size: 2rem;
+}
+.phase-subtitle{
+  font-family: $font-sans;
+  color: $dark-accent;
+  font-size: 1.5rem;
+}
+.phase-copy{
+  margin: $base-margin;
+}
+/* ==========================================================================
+   404
+   ========================================================================== */
+.not-found-main{
+  background-color: $light-accent;
+  color: $text-base;
+  height: 86vh;
+  padding: 2vh;
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  font-size: 1.5rem;
+}
+.not-found-main-wrapper{
+  height: 64vh;  
+  display: flex;
+  display: -webkit-flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+}
+.not-found{
+.not-found-btn{
+  background-color: $dark-accent;
+  color: $dark-base;
+  width: 50%;
+  margin: 1rem 0 0 0;
+  p{
+    margin: 5% 0;
+  }
+}
+.not-found-main{
+  h1{
+    font-size: 6rem;
+  }
+  h3{
+    font-size: 3.5rem;
+    font-family: $font-sans;
+    color: $dark-accent;
+    weight: bold;
+  }
+}
 }
 /* ==========================================================================
    Helper classes
@@ -626,9 +692,11 @@ footer i:hover{
 
 @media only screen and (min-width: 768px) {
     /* Style adjustments for viewports that meet the condition */
+// HEADER
 .logo{
   width: 10%;
 }
+// ABOUT PAGES
 .subpage-container figure img{
   width: 50%;
   height: auto;
@@ -642,8 +710,51 @@ footer i:hover{
 .duo figure img{
   width: 95%;
 }
+// PACKAGES
+.packages-wrapper{
+  font-size: 1.25rem;
+}
+.packages-header-wrapper{
+  display: flex;
+  display: -webkit-flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+.packages-header-wrapper p{
+  width: 80%;
+}
+.packages-header-description{
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-wrapper{
+  display: flex;
+  display: -webkit-flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+.card{
+  width: 45%;
+}
+.card-tags{
+  font-size: 1em;
+}
+.card-description{
+  margin: 2.5% 0;
+}
+.cost{
+  font-size: 1.5rem;
+}
+// 404
+.not-found-main{
+    padding: 2vh 4vh;
+}
 }
 @media only screen and (min-width: 1280px) {
+// FOOTER
 footer{
   padding: .5em 0;
 }
@@ -661,6 +772,7 @@ footer{
 .social li{
   margin: 0 .25em;
 }
+// HOMEPAGE HERO
 .intro-body{
   font-size: 1.25rem;
 }
@@ -671,8 +783,32 @@ footer{
 .hire-me{
   width: 35%;
 }
+// ABOUT PAGE
 .current-bio{
   padding: 2.5%;
+}
+// PACKAGES
+.top-shotta,
+.entry-package{
+  width: 100%;
+}
+.top-shotta{
+  .card-title{
+  padding: 5rem 0 2.5rem 0;
+}
+}
+.entry-package{
+  .card-title{
+  padding: 5rem 0 2.5rem 0;
+}
+}
+// PACKAGES
+.packages-header-wrapper p{
+  width: 70%;
+}
+//404
+.not-found-main{
+  padding: 2vh 8vh;
 }
 }
 @media print,

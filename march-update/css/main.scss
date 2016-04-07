@@ -570,6 +570,7 @@ footer i:hover{
    ========================================================================== */
 .portfolio-wrapper{
   width: 80%;
+  margin: 2rem 0;
 }
 .portfolio-main{
   display: flex;
@@ -593,10 +594,20 @@ footer i:hover{
 }
 .portfolio-content{
   padding: 1rem;
+  display: none;
     .content-title{
       font-family: $font-sans;
       font-size: 1.25rem;
+      line-height: 2;
     }
+}
+.content figure{
+  margin: 5% 0;
+  width: 90%;
+}
+.content-description{
+  line-height: 1.25;
+  margin: 0 0 1.5rem 0;
 }
 /* ==========================================================================
    PROCESS
@@ -838,6 +849,11 @@ footer i:hover{
 .packages-button p{
   padding: 1.25% 2.5%;
 }
+// PORTFOLIO
+.content figure{
+  margin: 2.5% 0;
+  width: 50%;
+}
 // 404
 .not-found-main{
     padding: 2vh 4vh;
@@ -892,9 +908,13 @@ footer{
   padding: 5rem 0 2.5rem 0;
 }
 }
-// PACKAGES
 .packages-header-wrapper p{
   width: 70%;
+}
+// PORTFOLIO
+.content figure{
+  margin: 2.5% 0;
+  width: 40%;
 }
 //404
 .not-found-main{

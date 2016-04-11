@@ -515,13 +515,6 @@ footer i:hover {
   weight: bold;
   color: #2EC4B6; }
 
-.packages-button {
-  background-color: #F2F2F2;
-  color: #011627; }
-
-.packages-button p {
-  padding: 2.5% 5%; }
-
 .packages-btn button {
   text-transform: none;
   font-size: 1.25rem;
@@ -778,16 +771,6 @@ footer i:hover {
 
   .cost {
     font-size: 1.5rem; }
-
-  .packages-button {
-    display: flex;
-    display: -webkit-flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center; }
-
-  .packages-button p {
-    padding: 1.25% 2.5%; }
 
   .content figure {
     margin: 2.5% 0;

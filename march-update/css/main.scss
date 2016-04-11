@@ -565,6 +565,14 @@ footer i:hover{
 .packages-button p{
   padding: 2.5% 5%;
 }
+.packages-btn button{
+  text-transform: none;
+  font-size: 1.25rem;
+  margin: $base-margin;
+  padding: .5rem 0;
+  background-color: $dark-base;
+  color: $light-accent;
+}
 /* ==========================================================================
    PORTFOLIO
    ========================================================================== */

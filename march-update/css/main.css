@@ -234,26 +234,24 @@ body {
 
 .main-container {
   width: 100%;
-  height: 75vh;
   display: flex;
   display: -webkit-flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-direction: column;
   padding: 7.5vh 0; }
 
 .hire-intro {
   width: 100%;
-  height: 25vh;
   display: flex;
   display: -webkit-flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-direction: column; }
 
 .hire-me {
   width: 60%;
-  margin: 2.5% 0; }
+  margin: 5% 0; }
 
 .hire-me button {
   color: #011627;
@@ -261,7 +259,7 @@ body {
 
 .hire-copy {
   line-height: 1.25em;
-  padding: 0; }
+  padding: 0.5em 0; }
 
 .links {
   line-height: 2.5;

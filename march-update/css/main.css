@@ -225,6 +225,9 @@ body {
   color: #2EC4B6;
   font-size: 1.2rem; }
 
+.hero-tagline a:hover {
+  color: #EFFFE9; }
+
 /* ==========================================================================
    Main Body
    ========================================================================== */
@@ -643,7 +646,7 @@ footer i:hover {
   color: #EFFFE9;
   font-family: NarzissRegular-Drops;
   height: 90vh;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   text-align: center; }
 
 /* ==========================================================================

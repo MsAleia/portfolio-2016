@@ -493,7 +493,7 @@ footer i:hover {
   display: flex;
   display: -webkit-flex;
   justify-content: center;
-  padding: 6rem 0 3rem 0;
+  padding: 2rem 0 1rem 0;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   font-size: 2rem;
@@ -501,7 +501,7 @@ footer i:hover {
   border-radius: 10px 10px 0 0; }
 
 .card-copy {
-  padding: 2rem;
+  padding: 1rem 2rem;
   line-height: 1.25; }
 
 .card-tags {
@@ -520,7 +520,7 @@ footer i:hover {
   text-transform: none;
   font-size: 1.25rem;
   margin: 1rem 0;
-  padding: .5rem 0;
+  padding: .25rem 0;
   background-color: #011627;
   color: #EFFFE9; }
 
@@ -586,6 +586,80 @@ footer i:hover {
 
 .phase-copy {
   margin: 1rem 0; }
+
+/* ==========================================================================
+   WORK WITH ME
+   ========================================================================== */
+.work-with-me-wrapper {
+  background: url("../img/work-with-bg.jpeg") no-repeat top left;
+  background-size: cover;
+  height: 100vh;
+  max-width: 500px; }
+  .work-with-me-wrapper .gray-alt {
+    background: rgba(242, 242, 242, 0.75); }
+
+.wwm-main-content {
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  justify-content: center;
+  flex-flow: row wrap;
+  height: 90%;
+  color: #011627; }
+
+.wwm-intro {
+  font-family: NarzissRegular-Drops;
+  font-size: 2.5rem; }
+
+.wwm-sales-wrapper {
+  width: 80%;
+  margin: 0 10%;
+  padding: 5% 0;
+  text-align: center; }
+  .wwm-sales-wrapper header {
+    margin: 0 0 5% 0; }
+  .wwm-sales-wrapper p {
+    margin: 5% 0;
+    line-height: 1.4; }
+  .wwm-sales-wrapper .packages-btn p {
+    margin: 1.25% 0; }
+
+.wwm-header {
+  background-color: #EFFFE9;
+  padding: 10% 0;
+  text-align: center; }
+  .wwm-header h2 {
+    width: 80%;
+    margin: 0 10%; }
+
+.wwm-subheader {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem; }
+
+.wwm-solution {
+  text-align: center;
+  background-color: #2EC4B6;
+  color: white; }
+
+.wwm-choose-aleia {
+  background-color: #011627; }
+  .wwm-choose-aleia p {
+    font-family: "Montserrat Light", sans-serif;
+    line-height: 1.3; }
+  .wwm-choose-aleia .choose-header {
+    font-size: 1.3rem; }
+
+.wwm-who {
+  background-color: #2EC4B6;
+  color: white; }
+
+.wwm-faq .question {
+  font-family: "Montserrat", sans-serif; }
+.wwm-faq .question-line {
+  width: 100%;
+  height: .25rem;
+  background-color: #B3B3B3;
+  margin: 10% 0; }
 
 /* ==========================================================================
    404
@@ -758,8 +832,7 @@ footer i:hover {
   .card-wrapper {
     display: flex;
     display: -webkit-flex;
-    flex-flow: row wrap;
-    justify-content: space-between; }
+    justify-content: space-around; }
 
   .card {
     width: 45%; }
@@ -777,9 +850,32 @@ footer i:hover {
     margin: 2.5% 0;
     width: 50%; }
 
+  .work-with-me-wrapper {
+    max-width: 1000px; }
+
+  .wwm-intro {
+    font-size: 3.5rem;
+    width: 100%;
+    text-align: center; }
+
+  .wwm-description {
+    font-size: 2rem;
+    width: 100%;
+    text-align: center; }
+
+  .wwm-header {
+    font-size: 3.5rem; }
+
+  .wwm-sales-wrapper p {
+    line-height: 1.3;
+    margin: 2.5% 0; }
+
+  .wwm-faq .question-line {
+    margin: 2.5% 0; }
+
   .not-found-main {
     padding: 2vh 4vh; } }
-@media only screen and (min-width: 1280px) {
+@media only screen and (min-width: 1200px) {
   footer {
     padding: .5em 0; }
 
@@ -810,12 +906,43 @@ footer i:hover {
   .current-bio {
     padding: 2.5%; }
 
-  .top-shotta,
+  .wwm-main-content {
+    height: 50%;
+    color: white; }
+
+  .wwm-header {
+    padding: 5% 0; }
+
+  .work-with-me-wrapper {
+    max-width: none; }
+
+  .card {
+    width: 85%; }
+
+  .wwwm-row-wrapper {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    align-content: center; }
+
+  .wwm-card-row {
+    display: flex;
+    display: -webkit-flex;
+    align-content: center;
+    justify-content: center;
+    align-content: center;
+    flex-flow: wrap row;
+    padding: 2.5%; }
+
+  .wwm-card-row {
+    width: 40%; }
+
+  .wwm-sales-wrapper {
+    width: 60%;
+    margin: 0 20%; }
+
   .entry-package {
     width: 100%; }
-
-  .top-shotta .card-title {
-    padding: 5rem 0 2.5rem 0; }
 
   .entry-package .card-title {
     padding: 5rem 0 2.5rem 0; }

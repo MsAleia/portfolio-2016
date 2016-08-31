@@ -646,7 +646,7 @@ footer i:hover{
   height: 100vh;
   max-width: 500px;
   .gray-alt{
-    background: rgba(242, 242, 242, 0.75);
+    background: rgba(242, 242, 242, 0.5);
   }
 }
 
@@ -802,8 +802,14 @@ footer i:hover{
 }
 .menu-active li{
   display: block;
-  margin: $base-margin;
+  margin: .5rem 0;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap column
 }
+
 .spacer{
   width: 25vw;
   height: .375rem;

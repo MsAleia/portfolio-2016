@@ -198,7 +198,7 @@ body {
 .hero {
   background-color: #011627;
   font-family: "Montserrat", sans-serif;
-  height: 90vh;
+  padding: 10rem 0;
   display: flex;
   display: -webkit-flex;
   display: flex;
@@ -729,6 +729,42 @@ footer i:hover {
   text-align: center; }
 
 /* ==========================================================================
+   OPT-IN
+   ========================================================================== */
+.opt-in {
+  background-color: #EFFFE9;
+  padding: 5% 0;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  align-items: center; }
+
+#mc_embed_signup {
+  font-family: "Montserrat Hairline", sans-serif;
+  text-align: center;
+  width: 80%; }
+  #mc_embed_signup header {
+    font-family: NarzissRegular-Drops;
+    text-transform: uppercase;
+    margin: 0 0 2.5% 0;
+    color: #011627;
+    font-size: 1.5rem; }
+  #mc_embed_signup #mce-EMAIL {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center; }
+  #mc_embed_signup .button {
+    font-family: "Montserrat Light", sans-serif;
+    background-color: #011627;
+    border: none;
+    text-transform: uppercase;
+    margin: 2.5% 0 0 0;
+    padding: 2.5% 1.25%;
+    width: 100%;
+    box-sizing: border-box;
+    color: #EFFFE9; }
+
+/* ==========================================================================
    Helper classes
    ========================================================================== */
 /*
@@ -801,6 +837,9 @@ footer i:hover {
   /* Style adjustments for viewports that meet the condition */
   .logo {
     width: 10%; }
+
+  .hero {
+    padding: 12.5rem 0; }
 
   .subpage-container figure img {
     width: 50%;
@@ -879,7 +918,10 @@ footer i:hover {
     margin: 2.5% 0; }
 
   .not-found-main {
-    padding: 2vh 4vh; } }
+    padding: 2vh 4vh; }
+
+  .opt-in {
+    padding: 2.5% 0; } }
 @media only screen and (min-width: 1200px) {
   footer {
     padding: .5em 0; }
@@ -908,6 +950,9 @@ footer i:hover {
   .hire-me {
     width: 35%; }
 
+  .hero {
+    padding: 20rem 0; }
+
   .current-bio {
     padding: 2.5%; }
 
@@ -935,7 +980,6 @@ footer i:hover {
     display: -webkit-flex;
     align-content: center;
     justify-content: center;
-    align-content: center;
     flex-flow: wrap row;
     padding: 2.5%; }
 
@@ -960,7 +1004,36 @@ footer i:hover {
     width: 40%; }
 
   .not-found-main {
-    padding: 2vh 8vh; } }
+    padding: 2vh 8vh; }
+
+  .opt-in {
+    padding: 1.25% 0; }
+
+  #mc_embed_signup {
+    width: 65%;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-around;
+    align-items: center; }
+    #mc_embed_signup header {
+      color: #011627;
+      font-size: 1.5rem;
+      width: 45%;
+      display: flex;
+      display: -webkit-flex;
+      justify-content: space-around;
+      align-items: center;
+      margin: 0; }
+      #mc_embed_signup header p {
+        height: 100%; }
+    #mc_embed_signup form {
+      width: 45%; }
+    #mc_embed_signup #mce-EMAIL {
+      width: 100%; }
+    #mc_embed_signup .button {
+      margin: 1.25% 0 0 0;
+      padding: 1.25% 0;
+      width: 100%; } }
 @media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */ }
 /* ==========================================================================

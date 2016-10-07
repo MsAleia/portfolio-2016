@@ -237,7 +237,7 @@ body{
 .hero{
   background-color: $dark-base;  
   font-family: $font-sans;
-  height: 90vh;
+  padding: 10rem 0;
   display: flex;
   display: -webkit-flex;
   display: flex;
@@ -704,18 +704,10 @@ footer i:hover{
     font-size: 1.5rem;
 }
 
-.wwm-familiar{
-  
-}
-
 .wwm-solution{
   text-align: center;
   background-color: $dark-accent;
   color: white;
-}
-
-.wwm-packages{
-
 }
 
 .wwm-choose-aleia{
@@ -827,6 +819,47 @@ footer i:hover{
   font-size: 2.5rem;
   text-align: center;
 }
+
+/* ==========================================================================
+   OPT-IN
+   ========================================================================== */
+.opt-in{
+  background-color: $light-accent;
+  padding: 5% 0;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#mc_embed_signup{
+  font-family: $font-sans-hairline;
+  text-align: center;
+  width: 80%;
+  header{
+    font-family: $font-display;
+    text-transform: uppercase;
+    margin: 0 0 2.5% 0;
+    color: $dark-base;
+    font-size: 1.5rem;
+  }
+  #mce-EMAIL{
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+  }
+  .button{
+    font-family: $font-sans-light;
+    background-color: $dark-base;
+    border: none;
+    text-transform: uppercase;
+    margin: 2.5% 0 0 0;
+    padding: 2.5% 1.25%;
+    width: 100%;
+    box-sizing: border-box;
+    color: $light-accent;
+  }
+}
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -913,6 +946,10 @@ footer i:hover{
 // HEADER
 .logo{
   width: 10%;
+}
+
+.hero{
+  padding: 12.5rem 0;
 }
 // ABOUT PAGES
 .subpage-container figure img{
@@ -1004,6 +1041,12 @@ footer i:hover{
 .not-found-main{
     padding: 2vh 4vh;
 }
+
+//OPT-IN
+.opt-in{
+  padding: 2.5% 0;
+}
+
 }
 @media only screen and (min-width: 1200px) {
 // FOOTER
@@ -1034,6 +1077,9 @@ footer{
 }
 .hire-me{
   width: 35%;
+}
+.hero{
+  padding: 20rem 0;
 }
 // ABOUT PAGE
 .current-bio{
@@ -1069,7 +1115,6 @@ footer{
   display: -webkit-flex;
   align-content: center;
   justify-content: center;
-  align-content: center;
   flex-flow: wrap row;
   padding: 2.5%;
 }
@@ -1105,7 +1150,44 @@ footer{
 .not-found-main{
   padding: 2vh 8vh;
 }
+//OPT-IN
+.opt-in{
+  padding: 1.25% 0;
 }
+#mc_embed_signup{
+    width: 65%;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-around;
+    align-items: center;
+  header{
+    color: $dark-base;
+    font-size: 1.5rem;
+    width: 45%;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0;
+    p{
+    height: 100%;
+    }
+  }
+  form{
+    width: 45%;
+  }
+  #mce-EMAIL{
+    width: 100%;
+  }
+  .button{
+    margin: 1.25% 0 0 0;
+    padding: 1.25% 0;
+    width: 100%;
+  }
+}
+}
+
+
 @media print,
        (-webkit-min-device-pixel-ratio: 1.25),
        (min-resolution: 1.25dppx),

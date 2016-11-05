@@ -212,7 +212,7 @@ Links
 ONLY exception is header hero on root index file
 ========================================================================== */
 
-$base-margin: 1rem 0;
+// $base-margin: 1rem 0;
 
 button{
   background-color: $main-color;
@@ -415,7 +415,7 @@ figure.aleia-photo img {
     background-color: $accent-color;
     font-size: 1.5rem;
     padding: .5rem 4rem;
-    p a{
+    a{
       font-color: $main-color;
     }
   }
@@ -426,6 +426,7 @@ figure.aleia-photo img {
    ========================================================================== */
 footer{
   background-color: $accent-color;
+  color: $standard-grey;
   font-family: $font-body;
   height: 10vh;
   width: 100%;
@@ -466,7 +467,11 @@ footer i:hover{
 /* ==========================================================================
    ABOUT PAGE
    ========================================================================== */
-#about, #wwm{
+.homepage,
+#about, 
+#wwm, 
+#portfolio, 
+#contact{
   .intro-name{
     color: $standard-grey;
   }
@@ -675,130 +680,124 @@ footer i:hover{
 }
 
 /* ==========================================================================
-   PACKAGES
-   ========================================================================== */
-// .packages-main{
-//   display: flex;
-//   display: -webkit-flex;
-//   flex-flow: row wrap;
-//   align-items: center;
-//   justify-content: space-around;  
-//   margin: 2rem 0;
-// }
-// .packages-wrapper{
-//   width: 80%;  
-// }
-// .small-spacer{
-//   width: 100%;
-//   height: .25rem;
-// }
-// .packages-header{
-//   margin: $base-margin;
-// }
-// .packages-intro{
-//   font-family: $font-display;
-//   color: $dark-base;
-//   font-size: 3rem;
-// }
-// .packages-header-wrapper{
-//   display: flex;
-//   display: -webkit-flex;
-//   flex-flow: row wrap;
-//   align-items: center;
-//   justify-content: center;
-// }
-
-/* ==========================================================================
-   PACKAGES CARD STYLES
-   ========================================================================== */
-// .card{
-//   background-color: white;
-//   margin: 2rem 0;
-//   border-radius: 10px;
-// }
-// .card-title{
-//   background-color: $dark-base;
-//   display: flex;
-//   display: -webkit-flex;
-//   justify-content: center;
-//   padding: 2rem 0 1rem 0;
-//   font-family: $font-sans;
-//   font-weight: bold;
-//   font-size: 2rem;
-//   color: $light-accent;
-//   border-radius: 10px 10px 0 0;
-// }
-// .card-copy{
-//   padding: 1rem 2rem;
-//   line-height: 1.25;
-// }
-// .card-tags{
-//   font-size: .75em;
-//   font-family: $font-sans-light;
-// }
-// .card-description{
-//   margin: 5% 0;
-// }
-// .cost{
-//   font-family: $font-sans;
-//   weight: bold;
-//   color: $dark-accent;
-// }
-// .packages-btn button{
-//   text-transform: none;
-//   font-size: 1.25rem;
-//   margin: $base-margin;
-//   padding: .25rem 0;
-//   background-color: $dark-base;
-//   color: $light-accent;
-// }
-/* ==========================================================================
    PORTFOLIO
    ========================================================================== */
-// .portfolio-wrapper{
-//   width: 80%;
-//   margin: 2rem 0;
-// }
-// .portfolio-main{
-//   display: flex;
-//   display: -webkit-flex;
-//   align-items: center;
-//   justify-content: center;
-//   background-color: $dark-base;
-//     article{
-//       margin: $base-margin;
-//       background-color: $light-base;
-//     }
-//     .portfolio-header{
-//       background-color: $light-accent;    
-//       padding: 1rem;
-//     }
-//     .portfolio-item-header{
-//       font-size: 1.5rem;
-//       font-family: $font-sans;
-//       margin: 0 0 1rem 0;
-//     }
-// }
-// .portfolio-content{
-//   padding: 1rem;
-//   display: none;
-//     .content-title{
-//       font-family: $font-sans;
-//       font-size: 1.25rem;
-//       line-height: 2;
-//     }
-// }
-// .content figure{
-//   margin: 5% 0;
-//   width: 90%;
-// }
-// .content-description{
-//   line-height: 1.25;
-//   margin: 0 0 1.5rem 0;
-// }
+.portfolio{
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  justify-content: center;
+    article{
+      background-color: $accent-grey;
+      margin: 1rem 0;
+    }
+    .portfolio-header{
+      background-color: $main-color;
+      color: white;   
+      padding: 1rem;
+    }
+    .portfolio-item-header{
+      font-size: 1.5rem;
+      margin: 0 0 1rem 0;
+    }
+}
+
+.portfolio-wrapper{
+  width: 80%;
+  margin: 2rem 0;
+}
+
+.portfolio-content{
+  padding: 1rem;
+  display: none;
+    .content-title{
+      font-size: 1.25rem;
+      line-height: 2;
+    }
+}
+.content figure{
+  margin: 5% 0;
+  width: 90%;
+}
+.content-description{
+  line-height: 1.25;
+  margin: 0 0 1.5rem 0;
+}
+
+.portfolio-tags{
+  text-transform: uppercase;
+  color: $secondary-color;
+}
 /* ==========================================================================
-   PROCESS
+   CONTACT
    ========================================================================== */
+   .contact{
+      display: flex;
+      display: -webkit-flex;
+      justify-content: space-around;
+      align-items: center;
+      width: 100%;
+      flex-wrap: wrap;
+      flex-direction: row;
+      .contact-wrapper{
+        width: 80%;
+        margin: 5% 0;
+      }
+  h1{
+      @include font-display;
+      font-size: 3.25rem;
+    }
+
+    form{
+      display: flex;
+      display: -webkit-flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-flow: wrap row;
+        input, textarea, select{
+          width: 100%;
+          height: 1.5rem;
+          border-sizing: border-box; 
+          margin-bottom: .5rem;
+        }
+        textarea{
+          height: 3rem;
+          margin-bottom: .5rem;
+        }
+        input[type="submit"]{
+          background-color: $main-color;
+          color: white;
+          text-transform: uppercase;
+          border: none;
+          font-size: 1.5rem;
+          font-weight: 700;
+          width: 100%;
+          padding: .5rem 4rem;
+          width: 100%;
+          height: auto;
+        }
+    }
+  }
+
+
+  //THANK YOU
+  body{
+    text-align: center;
+  }
+
+  .thank-you-copy{
+    @include font-header;
+    text-transform: uppercase;
+    color: $secondary-color;
+    font-size: 1.5rem;
+    margin-bottom: 5%;
+  }
+
+  .intro-name,
+  .welcome-tagline{
+    color: $accent-color;
+  }
+
 // .process-main{
 //   margin: 2rem 0;
 // }
@@ -1119,11 +1118,18 @@ footer i:hover{
 //   font-size: 1.5rem;
 // }
 
-// // PORTFOLIO
-// .content figure{
-//   margin: 2.5% 0;
-//   width: 50%;
-// }
+// PORTFOLIO
+.content figure{
+  margin: 2.5% 0;
+  width: 50%;
+}
+
+
+//contact{
+  input[type="submit"]{
+    width: 50%;
+  }
+
 
 // // WORK WITH ME
 // .work-with-me-wrapper{
@@ -1173,6 +1179,12 @@ footer i:hover{
 //     font-size: 1.5rem;
 //   }
 // }
+
+//THANK YOU
+
+#thank-you{
+  background-color: $main-color;
+}
 
 }
 @media only screen and (min-width: 1200px) {

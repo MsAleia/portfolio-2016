@@ -341,7 +341,7 @@ figure.aleia-photo img {
     background-color: #EFFFE9;
     font-size: 1.5rem;
     padding: .5rem 4rem; }
-    #mc_embed_signup button p a {
+    #mc_embed_signup button a {
       font-color: #011627; }
 
 /* ==========================================================================
@@ -349,6 +349,7 @@ figure.aleia-photo img {
    ========================================================================== */
 footer {
   background-color: #EFFFE9;
+  color: #E3E3E3;
   font-family: "Montserrat Light", sans-serif;
   height: 10vh;
   width: 100%;
@@ -387,11 +388,23 @@ footer i:hover {
 /* ==========================================================================
    ABOUT PAGE
    ========================================================================== */
-#about .intro-name, #wwm .intro-name {
+.homepage .intro-name,
+#about .intro-name,
+#wwm .intro-name,
+#portfolio .intro-name,
+#contact .intro-name {
   color: #E3E3E3; }
-#about .welcome .welcome-photos figure, #wwm .welcome .welcome-photos figure {
+.homepage .welcome .welcome-photos figure,
+#about .welcome .welcome-photos figure,
+#wwm .welcome .welcome-photos figure,
+#portfolio .welcome .welcome-photos figure,
+#contact .welcome .welcome-photos figure {
   max-width: 300px; }
-#about .welcome .welcome-info, #wwm .welcome .welcome-info {
+.homepage .welcome .welcome-info,
+#about .welcome .welcome-info,
+#wwm .welcome .welcome-info,
+#portfolio .welcome .welcome-info,
+#contact .welcome .welcome-info {
   text-align: center; }
 
 .about-copy {
@@ -548,17 +561,106 @@ footer i:hover {
     padding: 15% 20%; }
 
 /* ==========================================================================
-   PACKAGES
-   ========================================================================== */
-/* ==========================================================================
-   PACKAGES CARD STYLES
-   ========================================================================== */
-/* ==========================================================================
    PORTFOLIO
    ========================================================================== */
+.portfolio {
+  display: flex;
+  display: -webkit-flex;
+  align-items: center;
+  justify-content: center; }
+  .portfolio article {
+    background-color: #EEEEEE;
+    margin: 1rem 0; }
+  .portfolio .portfolio-header {
+    background-color: #011627;
+    color: white;
+    padding: 1rem; }
+  .portfolio .portfolio-item-header {
+    font-size: 1.5rem;
+    margin: 0 0 1rem 0; }
+
+.portfolio-wrapper {
+  width: 80%;
+  margin: 2rem 0; }
+
+.portfolio-content {
+  padding: 1rem;
+  display: none; }
+  .portfolio-content .content-title {
+    font-size: 1.25rem;
+    line-height: 2; }
+
+.content figure {
+  margin: 5% 0;
+  width: 90%; }
+
+.content-description {
+  line-height: 1.25;
+  margin: 0 0 1.5rem 0; }
+
+.portfolio-tags {
+  text-transform: uppercase;
+  color: #2EC4B6; }
+
 /* ==========================================================================
-   PROCESS
+   CONTACT
    ========================================================================== */
+.contact {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: row; }
+  .contact .contact-wrapper {
+    width: 80%;
+    margin: 5% 0; }
+  .contact h1 {
+    font-family: 'NarzissRegular-Drops';
+    text-transform: uppercase;
+    font-size: 3.25rem; }
+  .contact form {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: wrap row; }
+    .contact form input, .contact form textarea, .contact form select {
+      width: 100%;
+      height: 1.5rem;
+      border-sizing: border-box;
+      margin-bottom: .5rem; }
+    .contact form textarea {
+      height: 3rem;
+      margin-bottom: .5rem; }
+    .contact form input[type="submit"] {
+      background-color: #011627;
+      color: white;
+      text-transform: uppercase;
+      border: none;
+      font-size: 1.5rem;
+      font-weight: 700;
+      width: 100%;
+      padding: .5rem 4rem;
+      width: 100%;
+      height: auto; }
+
+body {
+  text-align: center; }
+
+.thank-you-copy {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #2EC4B6;
+  font-size: 1.5rem;
+  margin-bottom: 5%; }
+
+.intro-name,
+.welcome-tagline {
+  color: #EFFFE9; }
+
 /* ==========================================================================
    WORK WITH ME
    ========================================================================== */
@@ -647,7 +749,17 @@ footer i:hover {
     margin: 0 1.25%; }
 
   .about-copy-wrapper aside .about-aside-photo {
-    margin-left: .5rem; } }
+    margin-left: .5rem; }
+
+  .content figure {
+    margin: 2.5% 0;
+    width: 50%; }
+
+  input[type="submit"] {
+    width: 50%; }
+
+  #thank-you {
+    background-color: #011627; } }
 @media only screen and (min-width: 1200px) {
   footer {
     padding: .5em 0; }

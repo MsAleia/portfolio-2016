@@ -194,7 +194,7 @@ body {
   background-color: white;
   font-family: "Montserrat Light", sans-serif;
   font-size: 16px;
-  color: #E3E3E3; }
+  color: #011627; }
 
 main {
   background-color: white;
@@ -223,6 +223,39 @@ main {
 
 .logo {
   width: 25%; }
+
+/* ==========================================================================
+   MENU STYLES
+   ========================================================================== */
+#menu-main {
+  display: none; }
+
+.menu-active li {
+  display: block;
+  margin: .5rem 0;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap column; }
+
+.spacer {
+  width: 25vw;
+  height: .375rem;
+  background-color: #EFFFE9; }
+
+.menu-wrapper {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #011627;
+  color: #EFFFE9;
+  font-family: 'NarzissRegular-Drops';
+  text-transform: uppercase;
+  height: 90vh;
+  font-size: 2.5rem;
+  text-align: center; }
 
 /* ==========================================================================
    WELCOME
@@ -354,9 +387,68 @@ footer i:hover {
 /* ==========================================================================
    ABOUT PAGE
    ========================================================================== */
-/* ==========================================================================
-   ABOUT SUB-PAGES
-   ========================================================================== */
+#about .intro-name {
+  color: #E3E3E3; }
+#about .welcome .welcome-photos figure {
+  max-width: 300px; }
+#about .welcome .welcome-info {
+  text-align: center; }
+
+.about-copy {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap; }
+  .about-copy .about-copy-wrapper {
+    width: 80%;
+    margin: 5% 0;
+    color: #011627; }
+    .about-copy .about-copy-wrapper aside {
+      display: flex;
+      display: -webkit-flex;
+      flex-wrap: wrap;
+      flex-direction: column; }
+      .about-copy .about-copy-wrapper aside .about-aside-photo {
+        background: url(../img/aleia-3.jpg) no-repeat center;
+        background-size: cover;
+        height: 20rem;
+        max-height: 400px;
+        border: #011627 solid 5px; }
+        .about-copy .about-copy-wrapper aside .about-aside-photo img {
+          width: 100%; }
+    .about-copy .about-copy-wrapper h1 {
+      font-family: 'NarzissRegular-Drops';
+      text-transform: uppercase;
+      font-size: 3.25rem; }
+    .about-copy .about-copy-wrapper p {
+      line-height: 1.4;
+      margin: 1rem 0; }
+  .about-copy ul {
+    margin-left: 1rem; }
+    .about-copy ul li {
+      list-style: square outside none;
+      display: list-item; }
+
+.about-spacer {
+  background-color: #2EC4B6;
+  height: .25rem;
+  width: 33%;
+  margin-bottom: 1rem; }
+
+.about-p-accent {
+  color: #2EC4B6;
+  font-weight: 700; }
+
+.list-lead-in {
+  margin: 0;
+  line-height: 1; }
+
+.about-list p {
+  margin: 0;
+  line-height: 1; }
+
 /* ==========================================================================
    PACKAGES
    ========================================================================== */
@@ -375,39 +467,6 @@ footer i:hover {
 /* ==========================================================================
    404
    ========================================================================== */
-/* ==========================================================================
-   MENU STYLES
-   ========================================================================== */
-#menu-main {
-  display: none; }
-
-.menu-active li {
-  display: block;
-  margin: .5rem 0;
-  display: flex;
-  display: -webkit-flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: wrap column; }
-
-.spacer {
-  width: 25vw;
-  height: .375rem;
-  background-color: #EFFFE9; }
-
-.menu-wrapper {
-  display: flex;
-  display: -webkit-flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #011627;
-  color: #EFFFE9;
-  font-family: 'NarzissRegular-Drops';
-  text-transform: uppercase;
-  height: 90vh;
-  font-size: 2.5rem;
-  text-align: center; }
-
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -487,7 +546,15 @@ footer i:hover {
 
   .welcome-photos, .welcome-info {
     width: 40%;
-    margin: 0 1.25%; } }
+    margin: 0 1.25%; }
+
+  .about-copy-wrapper aside {
+    flex-direction: row;
+    flex-wrap: nowrap; }
+    .about-copy-wrapper aside .about-aside-copy {
+      width: 45%; }
+    .about-copy-wrapper aside .about-aside-photo {
+      width: 45%; } }
 @media only screen and (min-width: 1200px) {
   footer {
     padding: .5em 0; }
@@ -505,16 +572,6 @@ footer i:hover {
 
   .social li {
     margin: 0 .25em; }
-
-  .intro-body {
-    font-size: 1.25rem; }
-
-  .hire-intro {
-    flex-direction: row;
-    justify-content: space-around; }
-
-  .hire-me {
-    width: 35%; }
 
   .not-found-main {
     padding: 2vh 8vh; } }

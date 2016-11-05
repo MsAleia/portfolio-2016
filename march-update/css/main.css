@@ -400,7 +400,8 @@ footer i:hover {
   justify-content: space-around;
   align-items: center;
   width: 100%;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  flex-direction: row; }
   .about-copy .about-copy-wrapper {
     width: 80%;
     margin: 5% 0;
@@ -408,23 +409,27 @@ footer i:hover {
     .about-copy .about-copy-wrapper aside {
       display: flex;
       display: -webkit-flex;
-      flex-wrap: wrap;
-      flex-direction: column; }
+      flex-wrap: wrap; }
+      .about-copy .about-copy-wrapper aside .about-aside-copy {
+        flex: 1 300px; }
       .about-copy .about-copy-wrapper aside .about-aside-photo {
         background: url(../img/aleia-3.jpg) no-repeat center;
         background-size: cover;
         height: 20rem;
         max-height: 400px;
-        border: #011627 solid 5px; }
+        border: #011627 solid 5px;
+        flex: 1 300px; }
         .about-copy .about-copy-wrapper aside .about-aside-photo img {
           width: 100%; }
+    .about-copy .about-copy-wrapper #mc_embed_signup {
+      margin: 0; }
     .about-copy .about-copy-wrapper h1 {
       font-family: 'NarzissRegular-Drops';
       text-transform: uppercase;
       font-size: 3.25rem; }
     .about-copy .about-copy-wrapper p {
       line-height: 1.4;
-      margin: 1rem 0; }
+      margin: 0 0 1rem 0; }
   .about-copy ul {
     margin-left: 1rem; }
     .about-copy ul li {
@@ -445,8 +450,11 @@ footer i:hover {
   margin: 0;
   line-height: 1; }
 
+.about-list h3 {
+  font-weight: 700;
+  line-height: 2;
+  text-transform: uppercase; }
 .about-list p {
-  margin: 0;
   line-height: 1; }
 
 /* ==========================================================================
@@ -548,13 +556,8 @@ footer i:hover {
     width: 40%;
     margin: 0 1.25%; }
 
-  .about-copy-wrapper aside {
-    flex-direction: row;
-    flex-wrap: nowrap; }
-    .about-copy-wrapper aside .about-aside-copy {
-      width: 45%; }
-    .about-copy-wrapper aside .about-aside-photo {
-      width: 45%; } }
+  .about-copy-wrapper aside .about-aside-photo {
+    margin-left: .5rem; } }
 @media only screen and (min-width: 1200px) {
   footer {
     padding: .5em 0; }

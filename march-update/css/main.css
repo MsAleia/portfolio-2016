@@ -198,7 +198,7 @@ body {
 
 main {
   background-color: white;
-  color: #E3E3E3; }
+  color: #011627; }
 
 .homepage {
   text-align: center;
@@ -387,11 +387,11 @@ footer i:hover {
 /* ==========================================================================
    ABOUT PAGE
    ========================================================================== */
-#about .intro-name {
+#about .intro-name, #wwm .intro-name {
   color: #E3E3E3; }
-#about .welcome .welcome-photos figure {
+#about .welcome .welcome-photos figure, #wwm .welcome .welcome-photos figure {
   max-width: 300px; }
-#about .welcome .welcome-info {
+#about .welcome .welcome-info, #wwm .welcome .welcome-info {
   text-align: center; }
 
 .about-copy {
@@ -456,6 +456,96 @@ footer i:hover {
   text-transform: uppercase; }
 .about-list p {
   line-height: 1; }
+
+/* ==========================================================================
+   WORK WITH ME
+   ========================================================================== */
+.wwm {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  flex-direction: row; }
+  .wwm .about-spacer {
+    width: 36%; }
+  .wwm .wwm-wrapper {
+    width: 80%;
+    margin: 5% 0; }
+    .wwm .wwm-wrapper h1 {
+      font-family: 'NarzissRegular-Drops';
+      text-transform: uppercase;
+      font-size: 3.25rem; }
+    .wwm .wwm-wrapper p {
+      line-height: 1.4;
+      margin-bottom: 1rem; }
+
+.wwm-subheader {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2; }
+
+.wwm-who {
+  margin: 5% 0; }
+  .wwm-who aside {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    align-items: center; }
+    .wwm-who aside .about-aside-copy {
+      flex: 1 400px; }
+    .wwm-who aside .about-aside-photo {
+      background: url(../img/wwm.jpeg) no-repeat center;
+      background-size: cover;
+      height: 20rem;
+      max-height: 400px;
+      border: #011627 solid 5px;
+      flex: 1 300px;
+      margin-left: 2%; }
+      .wwm-who aside .about-aside-photo img {
+        width: 100%; }
+
+.question {
+  font-weight: 700; }
+
+.question-line {
+  width: 100%;
+  height: .25rem;
+  background-color: #011627;
+  margin: 2.5% 0; }
+
+.wwm-faq {
+  background-color: #EEEEEE; }
+  .wwm-faq .wwm-faq-wrapper {
+    width: 90%;
+    padding: 5%; }
+
+.packages {
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center; }
+  .packages #card-left {
+    margin-right: 20%; }
+  .packages header {
+    font-weight: 700;
+    color: #2EC4B6;
+    text-transform: uppercase;
+    font-size: 2rem;
+    line-height: 1.5; }
+
+.package-card {
+  flex: 1 400px;
+  width: 45%;
+  max-width: 350px;
+  height: 20%;
+  max-height: 600px;
+  background-color: #EEEEEE; }
+  .package-card .package-card-wrapper {
+    width: 60%;
+    padding: 15% 20%; }
 
 /* ==========================================================================
    PACKAGES

@@ -270,9 +270,9 @@ main{
 
 .page-header{
   background-color: $main-color;
-  color: $accent-color;    
-  display: flex;
+  color: $accent-color;   
   display: -webkit-flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1vh 5vw;
@@ -352,9 +352,9 @@ main{
           position: relative;
           display: block;
           min-height: 100%;
-          max-width: 100%;
           -webkit-filter: saturate(.1);
           filter: saturate(.1);
+          object-fit: cover;
         }
       }
   }
@@ -366,6 +366,7 @@ main{
 figure.aleia-photo img {
   max-width: none;
   opacity: 0.9;
+  object-fit: cover;
 }
 
 .hero-intro{
@@ -515,6 +516,7 @@ footer i:hover{
         flex: 1 300px;
         img{
           width: 100%;
+          object-fit: cover;
         }
       }
     }
@@ -524,6 +526,7 @@ footer i:hover{
     h1{
       @include font-display;
       font-size: 3.25rem;
+      text-align: left;
     }
     p{
       line-height: 1.4;
@@ -557,6 +560,8 @@ footer i:hover{
 }
 
 .about-list{
+  text-align: left;
+  margin-bottom: 1rem;
   h3{
     font-weight: 700;
     line-height: 2;
@@ -587,6 +592,7 @@ footer i:hover{
         h1{
           @include font-display;
           font-size: 3.25rem;
+          text-align: left;
         }
         p{
           line-height: 1.4;
@@ -622,6 +628,7 @@ footer i:hover{
         margin-left: 2%;
           img{
             width: 100%;
+            object-fit: cover;
           }
         }
     }
@@ -687,6 +694,7 @@ footer i:hover{
   display: -webkit-flex;
   align-items: center;
   justify-content: center;
+  text-align: left;
     article{
       background-color: $accent-grey;
       margin: 1rem 0;
@@ -746,6 +754,7 @@ footer i:hover{
   h1{
       @include font-display;
       font-size: 3.25rem;
+      text-align: left;
     }
 
     form{

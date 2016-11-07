@@ -213,8 +213,8 @@ main {
 .page-header {
   background-color: #011627;
   color: #EFFFE9;
-  display: flex;
   display: -webkit-flex;
+  display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1vh 5vw;
@@ -289,15 +289,16 @@ main {
         position: relative;
         display: block;
         min-height: 100%;
-        max-width: 100%;
         -webkit-filter: saturate(0.1);
-        filter: saturate(0.1); }
+        filter: saturate(0.1);
+        object-fit: cover; }
   .welcome .welcome-info {
     width: 80%; }
 
 figure.aleia-photo img {
   max-width: none;
-  opacity: 0.9; }
+  opacity: 0.9;
+  object-fit: cover; }
 
 .hero-intro {
   font-size: 2.5rem; }
@@ -433,13 +434,15 @@ footer i:hover {
         border: #011627 solid 5px;
         flex: 1 300px; }
         .about-copy .about-copy-wrapper aside .about-aside-photo img {
-          width: 100%; }
+          width: 100%;
+          object-fit: cover; }
     .about-copy .about-copy-wrapper #mc_embed_signup {
       margin: 0; }
     .about-copy .about-copy-wrapper h1 {
       font-family: 'NarzissRegular-Drops';
       text-transform: uppercase;
-      font-size: 3.25rem; }
+      font-size: 3.25rem;
+      text-align: left; }
     .about-copy .about-copy-wrapper p {
       line-height: 1.4;
       margin: 0 0 1rem 0; }
@@ -463,12 +466,15 @@ footer i:hover {
   margin: 0;
   line-height: 1; }
 
-.about-list h3 {
-  font-weight: 700;
-  line-height: 2;
-  text-transform: uppercase; }
-.about-list p {
-  line-height: 1; }
+.about-list {
+  text-align: left;
+  margin-bottom: 1rem; }
+  .about-list h3 {
+    font-weight: 700;
+    line-height: 2;
+    text-transform: uppercase; }
+  .about-list p {
+    line-height: 1; }
 
 /* ==========================================================================
    WORK WITH ME
@@ -489,7 +495,8 @@ footer i:hover {
     .wwm .wwm-wrapper h1 {
       font-family: 'NarzissRegular-Drops';
       text-transform: uppercase;
-      font-size: 3.25rem; }
+      font-size: 3.25rem;
+      text-align: left; }
     .wwm .wwm-wrapper p {
       line-height: 1.4;
       margin-bottom: 1rem; }
@@ -517,7 +524,8 @@ footer i:hover {
       flex: 1 300px;
       margin-left: 2%; }
       .wwm-who aside .about-aside-photo img {
-        width: 100%; }
+        width: 100%;
+        object-fit: cover; }
 
 .question {
   font-weight: 700; }
@@ -567,7 +575,8 @@ footer i:hover {
   display: flex;
   display: -webkit-flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  text-align: left; }
   .portfolio article {
     background-color: #EEEEEE;
     margin: 1rem 0; }
@@ -619,7 +628,8 @@ footer i:hover {
   .contact h1 {
     font-family: 'NarzissRegular-Drops';
     text-transform: uppercase;
-    font-size: 3.25rem; }
+    font-size: 3.25rem;
+    text-align: left; }
   .contact form {
     display: flex;
     display: -webkit-flex;

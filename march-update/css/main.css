@@ -186,8 +186,7 @@ a {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-html,
-body {
+html {
   height: 100%; }
 
 body {
@@ -204,11 +203,7 @@ main {
   text-align: center;
   display: flex;
   display: -webkit-flex;
-  min-height: 100vh;
-  flex-flow: row nowrap; }
-
-.wrapper {
-  flex: 1; }
+  min-height: 100%; }
 
 .page-header {
   background-color: #011627;
@@ -672,6 +667,9 @@ body {
   color: #EFFFE9; }
 
 /* ==========================================================================
+   ARCHIVE
+   ========================================================================== */
+/* ==========================================================================
    WORK WITH ME
    ========================================================================== */
 /* ==========================================================================
@@ -760,6 +758,9 @@ body {
 
   .about-copy-wrapper aside .about-aside-photo {
     margin-left: .5rem; }
+
+  #email-archive .welcome {
+    justify-content: space-around; }
 
   .content figure {
     margin: 2.5% 0;

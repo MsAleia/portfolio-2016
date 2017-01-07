@@ -239,8 +239,7 @@ a{
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-html,
-body{
+html{
     height: 100%;
 }
 
@@ -260,13 +259,13 @@ main{
     text-align: center;
     display: flex;
     display: -webkit-flex;
-    min-height: 100vh;
-    flex-flow: row nowrap;
+    min-height: 100%;
+    // flex-flow: row nowrap;
 }
 
-.wrapper {
-  flex: 1;
-}
+// .wrapper {
+//   flex: 1 0 auto;
+// }
 
 .page-header{
   background-color: $main-color;
@@ -807,6 +806,11 @@ footer i:hover{
     color: $accent-color;
   }
 
+
+/* ==========================================================================
+   ARCHIVE
+   ========================================================================== */
+
 // .process-main{
 //   margin: 2rem 0;
 // }
@@ -978,6 +982,8 @@ footer i:hover{
 // }
 
 
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -1085,6 +1091,12 @@ footer i:hover{
         margin-left: .5rem;
       }
     }
+}
+
+#email-archive{
+  .welcome{
+      justify-content: space-around;
+  }
 }
 
 

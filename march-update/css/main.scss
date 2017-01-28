@@ -317,7 +317,6 @@ main{
   text-align: center;
 }
 
-
 /* ==========================================================================
    WELCOME
    ========================================================================== */
@@ -326,14 +325,12 @@ main{
   background-size: cover;
   display: flex;
   display: -webkit-flex;
-  display: flex;
   align-items: center;
   flex-flow: wrap column;
   width: 100%;
-
   .welcome-photos{
-    width: 80%;
-    margin: 2.5% 0;
+    width: 90%;
+    margin: 5%;
     display: flex;
     display: -webkit-flex;
     display: flex;
@@ -343,7 +340,7 @@ main{
         position: relative;
         min-width: 60px;
         max-width: 480px;
-        max-height: 360px;
+        max-height: 480px;
         background: $main-color;
         img{
           width: 100%;
@@ -384,8 +381,8 @@ figure.aleia-photo img {
   margin: .5rem 0;
 }
 
-.welcome-tagline a:hover{
-  color: $accent-color;
+.welcome-span{
+  color: $secondary-color;
 }
 
 .intro-hi{
@@ -398,6 +395,53 @@ figure.aleia-photo img {
   font-family: $font-sans-hairline;
   text-transform: uppercase;
 }
+
+
+/* ==========================================================================
+   WELCOME - SALES
+   ========================================================================== */
+.sales{
+  .welcome{
+    width: 90%;
+    padding: 0 5%;
+    figure{
+      img{
+        width:100%;
+      }
+    }
+  }
+  .welcome-sales-wrapper{
+    margin: 5% 0 0 0;
+  }
+  .welcome-left, .welcome-right{
+    display: flex;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap;
+  }
+  .photo-row figure img{
+    width: 100%;
+  }
+}
+
+// .welcome-sales{
+//   width: 80%;
+//     display: flex;
+//     display: -webkit-flex;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     flex-flow: wrap column;
+//     img{
+//       width: 100%;
+//     }
+//     .welcome-sales-wrapper{
+//       margin: 10% 0;
+//     }
+// }
+
 /* ==========================================================================
    OPT-IN AKA MAIN HEADER ACCORDING TO STYLE GUIDE
    ========================================================================== */
@@ -414,13 +458,30 @@ figure.aleia-photo img {
   button{
     background-color: $accent-color;
     font-size: 1.5rem;
-    padding: .5rem 4rem;
+    padding: .5rem 2rem;
     a{
-      font-color: $main-color;
+      color: $main-color;
     }
   }
 }
 
+.opt-in-divider{
+  height: .5rem;
+  margin: 5% 0 0 0;
+  width: 100%;
+  background-color: $accent-color;
+}
+
+.opt-in-tagline{
+  color: $secondary-color;
+  font-size: 1.25rem;
+  margin: 2.5% 0;
+  padding: 2.5%;
+  p{
+    margin: 2.5% 0;
+  }
+  // border: .25rem solid $accent-color;
+}
 /* ==========================================================================
    Footer
    ========================================================================== */
@@ -1099,7 +1160,60 @@ footer i:hover{
   }
 }
 
+// SALES
 
+.sales{
+  .welcome{
+    flex-flow: wrap;
+  }
+ .welcome-sales{
+    .welcome-sales-wrapper{
+      width: 80%;
+      p{
+      font-size: 1.5rem;
+    }
+    }
+   figure{
+      padding: 0 15%;
+    }
+}
+   .welcome-info{
+      .opt-in{
+        margin: 0 10%;
+        p{
+        font-size: 1.5rem;
+      }
+    }
+   }
+   #mc_embed_signup button{
+    padding: 1.25rem 1rem;
+   }
+}
+
+.opt-in-divider{
+  display: none;
+}
+
+.welcome-left,
+.welcome-right{
+  width: 48%;
+  // height: auto;
+}
+
+.welcome-right{
+  figure{
+    width: 60%;
+  }
+  .opt-in-tagline{
+    margin: 2.5% 0 0 0;
+  }
+  .opt-in{
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-around;
+    flex-flow: wrap;
+  }
+}
 
 // // PACKAGES
 // .packages-wrapper{
@@ -1226,6 +1340,13 @@ footer{
 }
 .social li{
   margin: 0 .25em;
+}
+
+// SALES
+.sales{
+  .welcome-sales{
+    flex-flow: row wrap;
+  }
 }
 
 // HOMEPAGE HERO

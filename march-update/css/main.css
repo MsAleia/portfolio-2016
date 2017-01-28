@@ -260,13 +260,12 @@ main {
   background-size: cover;
   display: flex;
   display: -webkit-flex;
-  display: flex;
   align-items: center;
   flex-flow: wrap column;
   width: 100%; }
   .welcome .welcome-photos {
-    width: 80%;
-    margin: 2.5% 0;
+    width: 90%;
+    margin: 5%;
     display: flex;
     display: -webkit-flex;
     display: flex;
@@ -276,7 +275,7 @@ main {
       position: relative;
       min-width: 60px;
       max-width: 480px;
-      max-height: 360px;
+      max-height: 480px;
       background: #011627; }
       .welcome .welcome-photos figure img {
         width: 100%;
@@ -309,8 +308,8 @@ figure.aleia-photo img {
   font-size: 1.2rem;
   margin: .5rem 0; }
 
-.welcome-tagline a:hover {
-  color: #EFFFE9; }
+.welcome-span {
+  color: #2EC4B6; }
 
 .intro-hi {
   font-weight: 700;
@@ -320,6 +319,26 @@ figure.aleia-photo img {
 .intro-name {
   font-family: "Montserrat Hairline", sans-serif;
   text-transform: uppercase; }
+
+/* ==========================================================================
+   WELCOME - SALES
+   ========================================================================== */
+.sales .welcome {
+  width: 90%;
+  padding: 0 5%; }
+  .sales .welcome figure img {
+    width: 100%; }
+.sales .welcome-sales-wrapper {
+  margin: 5% 0 0 0; }
+.sales .welcome-left, .sales .welcome-right {
+  display: flex;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap; }
+.sales .photo-row figure img {
+  width: 100%; }
 
 /* ==========================================================================
    OPT-IN AKA MAIN HEADER ACCORDING TO STYLE GUIDE
@@ -336,9 +355,23 @@ figure.aleia-photo img {
   #mc_embed_signup button {
     background-color: #EFFFE9;
     font-size: 1.5rem;
-    padding: .5rem 4rem; }
+    padding: .5rem 2rem; }
     #mc_embed_signup button a {
-      font-color: #011627; }
+      color: #011627; }
+
+.opt-in-divider {
+  height: .5rem;
+  margin: 5% 0 0 0;
+  width: 100%;
+  background-color: #EFFFE9; }
+
+.opt-in-tagline {
+  color: #2EC4B6;
+  font-size: 1.25rem;
+  margin: 2.5% 0;
+  padding: 2.5%; }
+  .opt-in-tagline p {
+    margin: 2.5% 0; }
 
 /* ==========================================================================
    Footer
@@ -762,6 +795,38 @@ body {
   #email-archive .welcome {
     justify-content: space-around; }
 
+  .sales .welcome {
+    flex-flow: wrap; }
+  .sales .welcome-sales .welcome-sales-wrapper {
+    width: 80%; }
+    .sales .welcome-sales .welcome-sales-wrapper p {
+      font-size: 1.5rem; }
+  .sales .welcome-sales figure {
+    padding: 0 15%; }
+  .sales .welcome-info .opt-in {
+    margin: 0 10%; }
+    .sales .welcome-info .opt-in p {
+      font-size: 1.5rem; }
+  .sales #mc_embed_signup button {
+    padding: 1.25rem 1rem; }
+
+  .opt-in-divider {
+    display: none; }
+
+  .welcome-left,
+  .welcome-right {
+    width: 48%; }
+
+  .welcome-right figure {
+    width: 60%; }
+  .welcome-right .opt-in-tagline {
+    margin: 2.5% 0 0 0; }
+  .welcome-right .opt-in {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-around;
+    flex-flow: wrap; }
+
   .content figure {
     margin: 2.5% 0;
     width: 50%; }
@@ -788,6 +853,9 @@ body {
 
   .social li {
     margin: 0 .25em; }
+
+  .sales .welcome-sales {
+    flex-flow: row wrap; }
 
   .not-found-main {
     padding: 2vh 8vh; } }

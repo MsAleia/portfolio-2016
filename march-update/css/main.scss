@@ -149,6 +149,7 @@ $secondary-color: #2EC4B6;
 $accent-color: #EFFFE9;
 $standard-grey: #E3E3E3;
 $accent-grey: #EEEEEE;
+$button-color: #E71D36;
 
 // Fonts
 @font-face{
@@ -549,6 +550,7 @@ footer i:hover{
    ========================================================================== */
 .cta{
   color: $secondary-color;
+  font-size: 1.25rem;
 }
 /* ==========================================================================
    ABOUT PAGE
@@ -969,7 +971,7 @@ footer i:hover{
     margin: 0px;
     padding:  9px 0px;
     font-size: 1rem;
-    background: #2ec4b6;
+    background: $button-color;
     -moz-border-radius: 0px;
     -webkit-border-radius: 0px;
     border-radius: 0px; /* border radius */

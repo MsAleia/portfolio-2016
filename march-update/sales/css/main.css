@@ -210,15 +210,15 @@ main {
   width: 90vw;
   height: 5vh; }
 
-.logo {
-  width: 25%; }
+.logo img {
+  height: 1.75em; }
 
 /* ==========================================================================
    Footer
    ========================================================================== */
 footer {
-  background-color: #2EC4B6;
-  color: #E3E3E3;
+  background-color: #011627;
+  color: white;
   font-family: "Montserrat Light", sans-serif;
   height: 10vh;
   width: 100%;
@@ -249,10 +249,18 @@ footer {
   justify-content: space-between; }
 
 footer i {
-  color: #E3E3E3; }
+  color: white; }
 
 footer i:hover {
   color: #2EC4B6; }
+
+/* ==========================================================================
+  Layout
+   ========================================================================== */
+.sales-wrapper h3 {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 2rem; }
 
 /* ==========================================================================
   Pain points
@@ -306,7 +314,7 @@ footer i:hover {
 /* ==========================================================================
    Sales FAQs
    ========================================================================== */
-.sales-faq {
+.sales-faqs {
   height: 500px;
   background-color: steelblue; }
 

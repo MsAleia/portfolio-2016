@@ -173,6 +173,7 @@ $font-sans-hairline: 'Montserrat Hairline', sans-serif;
 @mixin font-header {
   font-family: 'Montserrat';
   font-weight: 700;
+  font-size: 2rem;
 }
 
 @mixin font-link {
@@ -267,8 +268,9 @@ main{
   height: 5vh;
 }
 
-.logo{
-  width: 25%;
+.logo img{
+  height: 1.75em;
+
 }
 
 
@@ -276,8 +278,8 @@ main{
    Footer
    ========================================================================== */
 footer{
-  background-color: $secondary-color;
-  color: $standard-grey;
+  background-color: $main-color;
+  color: white;
   font-family: $font-body;
   height: 10vh;
   width: 100%;
@@ -309,10 +311,20 @@ footer{
 }
 
 footer i{
-  color: $standard-grey;
+  color: white;
 }
 footer i:hover{
   color: $secondary-color;
+}
+
+/* ==========================================================================
+  Layout
+   ========================================================================== */
+
+.sales-wrapper{
+  h3{
+    @include font-header;
+  }
 }
 
 /* ==========================================================================
@@ -384,7 +396,7 @@ footer i:hover{
    Sales FAQs
    ========================================================================== */
 
-.sales-faq{
+.sales-faqs{
   height: 500px;
   background-color: steelblue;
 }

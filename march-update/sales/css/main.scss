@@ -255,13 +255,6 @@ main{
   color: $main-color;
 }
 
-.homepage{
-    text-align: center;
-    display: flex;
-    display: -webkit-flex;
-    min-height: 100%;
-}
-
 .page-header{
   background-color: $main-color;
   color: $accent-color;   
@@ -271,298 +264,19 @@ main{
   align-items: center;
   padding: 1vh 5vw;
   width: 90vw;
-  height: 8vh;
+  height: 5vh;
 }
 
 .logo{
   width: 25%;
 }
 
-/* ==========================================================================
-   MENU STYLES
-   ========================================================================== */
-#menu-main{ 
-  display: none;
-}
-.menu-active li{
-  display: block;
-  margin-bottom: .75rem;
-  display: flex;
-  display: -webkit-flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: wrap column;
-}
 
-.spacer{
-  width: 75%;
-  margin: 0 12.5%;
-  height: .375rem;
-  background-color: $accent-color;
-}
-.menu-wrapper{
-  display: flex;
-  display: -webkit-flex;
-  justify-content: center;
-  align-items: center;
-  background-color: $main-color;
-  color: $accent-color;
-  @include font-display;
-  height: 90vh;
-  font-size: 2.5rem;
-  text-align: center;
-}
-
-/* ==========================================================================
-   WELCOME - SALES
-   ========================================================================== */
-.sales{
-  background-color: $main-color;
-  display: flex;
-  display: -webkit-flex;
-  justify-content: space-around;
-  .welcome{
-    display: flex;
-    display: -webkit-flex;
-    flex-flow: wrap column;
-    align-items: center;
-    justify-content: space-around;
-    width: 90%;
-    margin: 0 5%;
-    text-align: center;
-    .welcome-left, .welcome-right{
-      display: flex;
-      display: -webkit-flex;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-flow: wrap;
-    }
-    figure{
-        img{
-          width:100%;
-        }
-      }
-    }
-}
-
-.welcome-left{
-  color: $secondary-color;
-  font-size: 2.5rem;
-}
-.intro-hi{
-    font-weight: 700;
-    font-size: 3.25rem;
-}
-
-.intro-name{
-  font-family: $font-sans-hairline;
-  text-transform: uppercase;
-  color: $accent-color;
-  font-size: 1rem;
-}
-
-.welcome h1{
-  @include font-display;
-  color: $accent-color;
-  font-size: 3rem;
-}
-
-.welcome-tagline{
-  font-size: 1.2rem;
-  margin: .5rem 0;
-}
-
-.welcome-span{
-  color: $accent-color;
-}
-.opt-in img{
-  box-shadow: 10px 5px 25px #000000;
-}
-
-.email-signup{
-  
-  .ck_form.ck_naked {
-  /* divider image */
-  background: transparent;
-  line-height: 1.5em;
-  overflow: hidden;
-  color: #222222;
-  font-size: 16px;
-  border: none;
-  -webkit-box-shadow: none;
-  -moz-box-shadow: none;
-  box-shadow: none;
-  clear: both;
-  margin: 20px 0px;
-  text-align: center;
-}
-
-.ck_form.ck_naked p {
-  padding: 0px;
-}
-
-.ck_form, .ck_form * {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-.ck_form.ck_naked .ck_form_fields {
-  width: 100%;
-  float: left;
-  padding: 5%;
-}
-/* Form fields */
-
-.ck_errorArea {
-  display: none; /* temporary */
-}
-
-#ck_success_msg {
-  padding: 10px 10px 0px;
-  border: solid 1px #ddd;
-  background: #eee;
-}
-
-.ck_form.ck_naked input[type="text"], .ck_form.ck_naked input[type="email"] {
-  font-size: 18px;
-  padding: 10px 8px;
-  width: 34%;
-  border: 1px solid #d6d6d6; /* stroke */
-  -moz-border-radius: 0px;
-  -webkit-border-radius: 0px;
-  border-radius: 0px; /* border radius */
-  background-color: #fff; /* layer fill content */
-  margin-bottom: 5px;
-  height: auto;
-  float: left;
-  margin: 0px;
-  margin-right: 1%;
-  height: 42px;
-}
-
-.ck_form input[type="text"]:focus, .ck_form input[type="email"]:focus {
-  outline: none;
-  border-color: #aaa;
-}
-
-.ck_form.ck_naked .ck_subscribe_button {
-    width: 100%;
-    color: #fff;
-    margin: 0px;
-    padding:  9px 0px;
-    font-size: 18px;
-    background: #2ec4b6;
-    -moz-border-radius: 0px;
-    -webkit-border-radius: 0px;
-    border-radius: 0px; /* border radius */
-    cursor: pointer;
-    border: none;
-    text-shadow: none;
-    width: 30%;
-    float: left;
-    height: 42px;
-  }
-
-
-.ck_converted_content {
-  display: none;
-  padding: 5%;
-  background: #fff;
-}
-
-/* max width 500 */
-
-  .ck_form.ck_naked.width500 .ck_subscribe_button {
-    width: 100%;
-    float: none;
-    margin-top: 5px;
-  }
-
-  .ck_form.ck_naked.width500 input[type="text"], .ck_form.ck_naked.width500 input[type="email"] {
-    width: 49%;
-  }
-
-  .ck_form.ck_naked.width500 input[type="email"] {
-    margin-right: 0px;
-    width: 50%;
-  }
-
-/* max width 400 */
-
-  .ck_form.ck_naked.width400 .ck_subscribe_button, .ck_form.ck_naked.width400 input[type="text"], .ck_form.ck_naked.width400 input[type="email"] {
-    width: 100%;
-    float: none;
-    margin-top: 5px;
-  }
-
-.ck_slide_up, .ck_modal, .ck_slide_up .ck_naked, .ck_modal .ck_naked  {
-  min-width: 400px;
-}
-
-.page .ck_form.ck_naked {
-  margin: 50px auto;
-  max-width: 700px;
-}
-
-
-/* v6 */
-
-.ck_slide_up.ck_form_v6, .ck_modal.ck_form_v6, .ck_slide_up.ck_form_v6 .ck_naked, .ck_modal.ck_form_v6 .ck_naked {
-  min-width: 0 !important;
-}
-
-.ck_form_v6 #ck_success_msg {
-  padding: 0px 10px;
-}
-
-}
-
-/* ==========================================================================
-   OPT-IN AKA MAIN HEADER ACCORDING TO STYLE GUIDE
-   ========================================================================== */
-
-#mc_embed_signup{
-  font-family: $font-body;
-  text-align: center;
-  width: 100%;
-  display: flex;
-  display: -webkit-flex;
-  justify-content: center;
-  align-items: center;
-  margin: 5% 0;
-  button{
-    background-color: $accent-color;
-    font-size: 1.5rem;
-    padding: .5rem 2rem;
-    a{
-      color: $main-color;
-    }
-  }
-}
-
-.opt-in-divider{
-  height: .5rem;
-  margin: 5% 0 0 0;
-  width: 100%;
-  background-color: $accent-color;
-}
-
-.opt-in-tagline{
-  color: $secondary-color;
-  font-size: 1.25rem;
-  margin: 2.5% 0;
-  padding: 2.5%;
-  p{
-    margin: 2.5% 0;
-  }
-}
 /* ==========================================================================
    Footer
    ========================================================================== */
 footer{
-  background-color: $accent-color;
+  background-color: $secondary-color;
   color: $standard-grey;
   font-family: $font-body;
   height: 10vh;
@@ -602,10 +316,78 @@ footer i:hover{
 }
 
 /* ==========================================================================
-   Main Body
+  Pain points
    ========================================================================== */
 
+.pain-points{
+  height: 500px;
+  background-color: lightsalmon;
+}
 
+
+/* ==========================================================================
+   Sales Solutions
+   ========================================================================== */
+
+.sales-solutions{
+  height: 500px;
+  background-color: tomato;
+}
+
+
+/* ==========================================================================
+   Sales Included
+   ========================================================================== */
+
+.sales-included{
+  height: 500px;
+  background-color: palevioletred;
+}
+
+/* ==========================================================================
+   Sales Payment
+   ========================================================================== */
+
+.sales-payment{
+  height: 500px;
+  background-color: lemonchiffon;
+}
+
+/* ==========================================================================
+   Sales Testimonials
+   ========================================================================== */
+
+.sales-testimonials{
+  height: 500px;
+  background-color: thistle;
+}
+
+/* ==========================================================================
+   Sales Bio
+   ========================================================================== */
+
+.sales-bio{
+  height: 500px;
+  background-color: rebeccapurple;
+}
+
+/* ==========================================================================
+   Sales Clients
+   ========================================================================== */
+
+.sales-clients{
+  height: 500px;
+  background-color: palegreen;
+}
+
+/* ==========================================================================
+   Sales FAQs
+   ========================================================================== */
+
+.sales-faq{
+  height: 500px;
+  background-color: steelblue;
+}
 
 
 /* ==========================================================================

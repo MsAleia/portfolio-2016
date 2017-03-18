@@ -587,7 +587,6 @@ footer i:hover{
   padding: 2.5% 0;
   display: flex;
   display: -webkit-flex;
-  content-align: center;
   justify-content: center;
   .offerings-container{
     width: 80%;
@@ -641,10 +640,7 @@ footer i:hover{
         min-height: 150px;
       }
     }
-    .offerings-item-wrapper{
-
-    }
-}
+  }
 
 /* ==========================================================================
    ABOUT PAGE
@@ -789,12 +785,15 @@ footer i:hover{
   width: 100%;
   flex-wrap: wrap;
   flex-direction: row;
+  background-color: $accent-grey;
     .about-spacer{
       width: 36%;
     }
     .wwm-wrapper{
-      width: 80%;
-      margin: 5% 0;
+      display: flex;
+      display: -webkit-flex;
+      justify-content: center;
+      flex-flow: wrap row;
         h1{
           @include font-display;
           font-size: 3.25rem;
@@ -815,8 +814,13 @@ footer i:hover{
 
 
 .wwm-who{
-  margin: 5% 0;
+  display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 0 5% 0;
   aside{
+    width: 80%;
     display: flex;
     display: -webkit-flex;
     flex-wrap: wrap;
@@ -859,37 +863,9 @@ footer i:hover{
   }
 }
 
-.packages{
-  display: flex;
-  display: -webkit-flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  text-align: center;
-    #card-left{
-      margin-right: 20%;
-    }
-    header{
-      font-weight: 700;
-      color: $secondary-color;
-      text-transform: uppercase;
-      font-size: 2rem;
-      line-height: 1.5;
-    }
-}
-
-.package-card{
-  flex: 1 400px;
-  width: 45%;
-  max-width: 350px;
-  height: 20%;
-  max-height: 600px;
-  background-color: $accent-grey;
-
-  .package-card-wrapper{
-    width: 60%;
-    padding: 15% 20%;
-  }
-
+.wwm-title-header{
+  width: 80%;
+  margin: 5% 0 0 0;
 }
 
 /* ==========================================================================
@@ -1433,7 +1409,18 @@ footer{
     margin: 2.5% 0 0 0;
   }
 }
-
+.welcome{
+.welcome-container{
+  background-color: blue;
+  width: 80%;
+  .welcome-photos{
+    background-color: pink;
+  }
+  .welcome-info{
+    background-color: lightblue;
+  }
+}
+}
 //OFFERINGS
 .offerings-container-wrapper{
   display: -webkit-flex;
@@ -1458,6 +1445,9 @@ footer{
 footer{
     padding: 1vh 0;
 }
+
+//sales
+
 
 //404
 .not-found-main{

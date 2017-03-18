@@ -489,7 +489,6 @@ footer i:hover {
   padding: 2.5% 0;
   display: flex;
   display: -webkit-flex;
-  content-align: center;
   justify-content: center; }
   .offerings .offerings-container {
     width: 80%; }
@@ -654,12 +653,15 @@ footer i:hover {
   align-items: center;
   width: 100%;
   flex-wrap: wrap;
-  flex-direction: row; }
+  flex-direction: row;
+  background-color: #EEEEEE; }
   .wwm .about-spacer {
     width: 36%; }
   .wwm .wwm-wrapper {
-    width: 80%;
-    margin: 5% 0; }
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    flex-flow: wrap row; }
     .wwm .wwm-wrapper h1 {
       font-family: 'NarzissRegular-Drops';
       text-transform: uppercase;
@@ -675,8 +677,13 @@ footer i:hover {
   line-height: 2; }
 
 .wwm-who {
-  margin: 5% 0; }
+  display: flex;
+  display: -webkit-flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 0 5% 0; }
   .wwm-who aside {
+    width: 80%;
     display: flex;
     display: -webkit-flex;
     flex-wrap: wrap;
@@ -710,31 +717,9 @@ footer i:hover {
     width: 90%;
     padding: 5%; }
 
-.packages {
-  display: flex;
-  display: -webkit-flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  text-align: center; }
-  .packages #card-left {
-    margin-right: 20%; }
-  .packages header {
-    font-weight: 700;
-    color: #2EC4B6;
-    text-transform: uppercase;
-    font-size: 2rem;
-    line-height: 1.5; }
-
-.package-card {
-  flex: 1 400px;
-  width: 45%;
-  max-width: 350px;
-  height: 20%;
-  max-height: 600px;
-  background-color: #EEEEEE; }
-  .package-card .package-card-wrapper {
-    width: 60%;
-    padding: 15% 20%; }
+.wwm-title-header {
+  width: 80%;
+  margin: 5% 0 0 0; }
 
 /* ==========================================================================
    PORTFOLIO
@@ -1128,6 +1113,14 @@ body {
       width: 100%; }
   .welcome-right .opt-in-tagline {
     margin: 2.5% 0 0 0; }
+
+  .welcome .welcome-container {
+    background-color: blue;
+    width: 80%; }
+    .welcome .welcome-container .welcome-photos {
+      background-color: pink; }
+    .welcome .welcome-container .welcome-info {
+      background-color: lightblue; }
 
   .offerings-container-wrapper {
     display: -webkit-flex;

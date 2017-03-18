@@ -268,8 +268,13 @@ main {
   display: flex;
   display: -webkit-flex;
   align-items: center;
-  flex-flow: wrap column;
-  width: 100%; }
+  justify-content: center; }
+  .welcome .welcome-container {
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    flex-flow: wrap column;
+    width: 90%; }
   .welcome .welcome-photos {
     width: 90%;
     margin: 5%;
@@ -417,12 +422,18 @@ figure.aleia-photo img {
   .opt-in-tagline p {
     margin: 2.5% 0; }
 
+.non-homepage {
+  padding: 0;
+  margin: 0; }
+  .non-homepage p {
+    color: white; }
+
 /* ==========================================================================
    Footer
    ========================================================================== */
 footer {
-  background-color: #EFFFE9;
-  color: #011627;
+  background-color: #011627;
+  color: white;
   font-family: "Montserrat Light", sans-serif;
   height: 10vh;
   width: 100%;
@@ -458,7 +469,7 @@ footer li {
   margin: 0 5%; }
 
 footer i {
-  color: #011627; }
+  color: white; }
 
 footer i:hover {
   color: #2EC4B6; }
@@ -481,7 +492,7 @@ footer i:hover {
   content-align: center;
   justify-content: center; }
   .offerings .offerings-container {
-    width: 90%; }
+    width: 80%; }
   .offerings h2 {
     font-family: 'Montserrat';
     font-weight: 700;
@@ -557,7 +568,7 @@ footer i:hover {
   flex-direction: row; }
   .about-copy .about-copy-wrapper {
     width: 80%;
-    margin: 5% 0;
+    margin: 5% 0 2.5% 0;
     color: #011627; }
     .about-copy .about-copy-wrapper aside {
       display: flex;
@@ -565,6 +576,12 @@ footer i:hover {
       flex-wrap: wrap; }
       .about-copy .about-copy-wrapper aside .about-aside-copy {
         flex: 1 300px; }
+      .about-copy .about-copy-wrapper aside .about-aside-copy {
+        display: flex;
+        display: -webkit-flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: wrap row; }
       .about-copy .about-copy-wrapper aside .about-aside-photo {
         background: url(../img/aleia-3.jpg) no-repeat center;
         background-size: cover;
@@ -583,13 +600,16 @@ footer i:hover {
       font-size: 3.25rem;
       text-align: left; }
     .about-copy .about-copy-wrapper p {
-      line-height: 1.4;
-      margin: 0 0 1rem 0; }
+      line-height: 1.4; }
   .about-copy ul {
     margin-left: 1rem; }
     .about-copy ul li {
       list-style: square outside none;
       display: list-item; }
+  .about-copy .email-signup .ck_form.ck_naked {
+    margin: 0; }
+    .about-copy .email-signup .ck_form.ck_naked .ck_form_fields {
+      padding: 2.5% 0; }
 
 .about-spacer {
   background-color: #2EC4B6;
@@ -613,7 +633,18 @@ footer i:hover {
     line-height: 2;
     text-transform: uppercase; }
   .about-list p {
-    line-height: 1; }
+    line-height: 2; }
+
+.about-after-aside-copy {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: wrap column;
+  margin: 2.5% 0 0 0; }
+  .about-after-aside-copy p {
+    width: 50%;
+    margin: 0 0 1rem 0; }
 
 /* ==========================================================================
    WORK WITH ME
@@ -886,7 +917,11 @@ body {
     text-shadow: none;
     width: 30%;
     float: left;
-    height: 42px; }
+    height: 42px;
+    white-space: nowrap;
+    /*added because text was overflowing button */
+    font-size: .8rem;
+    /*added because text was overflowing button */ }
   .email-signup .ck_converted_content {
     display: none;
     padding: 5%;
@@ -987,13 +1022,13 @@ body {
   .logo {
     width: 10%; }
 
-  .welcome {
-    flex-flow: nowrap row;
-    justify-content: space-between; }
-
-  .welcome-photos, .welcome-info {
-    width: 40%;
-    margin: 0 1.25%; }
+  .welcome .welcome-container {
+    width: 90%;
+    flex-flow: nowrap;
+    justify-content: space-around; }
+  .welcome .welcome-photos, .welcome .welcome-info {
+    width: 45%;
+    margin: 5% 0; }
 
   .offerings-item {
     min-height: 300px; }
@@ -1040,8 +1075,7 @@ body {
     justify-content: center; }
     .sales .welcome {
       flex-flow: nowrap row;
-      justify-content: space-around;
-      height: 80vh; }
+      justify-content: space-around; }
 
   #mc_embed_signup button {
     padding: 1.25rem 1rem; }
@@ -1072,7 +1106,7 @@ body {
     background-color: #011627; }
 
   footer {
-    font-size: 1.25rem;
+    font-size: 1rem;
     justify-content: space-around; }
 
   .footer-copy {

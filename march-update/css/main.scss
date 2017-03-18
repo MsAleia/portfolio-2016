@@ -328,11 +328,17 @@ main{
 .welcome{
   background-color: $main-color;
   background-size: cover;
-  display: flex;
-  display: -webkit-flex;
-  align-items: center;
-  flex-flow: wrap column;
-  width: 100%;
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    justify-content: center;
+  .welcome-container{  
+    display: flex;
+    display: -webkit-flex;
+    align-items: center;
+    flex-flow: wrap column;
+    width: 90%;
+  }
   .welcome-photos{
     width: 90%;
     margin: 5%;
@@ -400,7 +406,6 @@ figure.aleia-photo img {
   font-family: $font-sans-hairline;
   text-transform: uppercase;
 }
-
 
 /* ==========================================================================
    WELCOME - SALES
@@ -509,12 +514,20 @@ figure.aleia-photo img {
   }
 }
 
+// opt-in header non-homepage
+.non-homepage{
+  padding: 0;
+  margin: 0;
+  p{
+  color: white;
+  }
+}
 /* ==========================================================================
    Footer
    ========================================================================== */
 footer{
-  background-color: $accent-color;
-  color: $main-color;
+  background-color: $main-color;
+  color: white;
   font-family: $font-body;
   height: 10vh;
   width: 100%;
@@ -552,7 +565,7 @@ footer li{
 
 }
 footer i{
-  color: $main-color;
+  color: white;
 }
 footer i:hover{
   color: $secondary-color;
@@ -577,7 +590,7 @@ footer i:hover{
   content-align: center;
   justify-content: center;
   .offerings-container{
-    width: 90%;
+    width: 80%;
   }
   h2{
       @include font-header;
@@ -666,7 +679,7 @@ footer i:hover{
   flex-direction: row;
   .about-copy-wrapper{
     width: 80%;
-    margin: 5% 0;
+    margin: 5% 0 2.5% 0;
     color: $main-color;
     aside{
       display: flex;
@@ -674,6 +687,13 @@ footer i:hover{
       flex-wrap: wrap;
       .about-aside-copy{
         flex: 1 300px;
+      }
+      .about-aside-copy{
+        display: flex;
+        display: -webkit-flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: wrap row;
       }
       .about-aside-photo{
         background: url(../img/aleia-3.jpg) no-repeat center;
@@ -698,7 +718,6 @@ footer i:hover{
     }
     p{
       line-height: 1.4;
-      margin: 0 0 1rem 0;
     }
   }
   ul{
@@ -706,6 +725,14 @@ footer i:hover{
     li{
       list-style: square outside none;
       display: list-item;
+    }
+  }
+  .email-signup{
+    .ck_form.ck_naked{
+      margin: 0;
+      .ck_form_fields{
+        padding: 2.5% 0;
+      }
     }
   }
 }
@@ -736,8 +763,22 @@ footer i:hover{
     text-transform: uppercase;
   }
   p{
-    line-height: 1;
+    line-height: 2;
   }
+}
+
+.about-after-aside-copy{
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: wrap column;
+  margin: 2.5% 0 0 0;
+  p{
+    width: 50%;      
+    margin: 0 0 1rem 0;
+  }
+
 }
 
 /* ==========================================================================
@@ -1062,6 +1103,8 @@ footer i:hover{
     width: 30%;
     float: left;
     height: 42px;
+    white-space: nowrap; /*added because text was overflowing button */
+    font-size: .8rem; /*added because text was overflowing button */
   }
 
 
@@ -1209,15 +1252,20 @@ footer i:hover{
 //WELCOME
 
 .welcome{
-  flex-flow: nowrap row;
-  justify-content: space-between;
-}
+  // flex-flow: nowrap row;
+  // justify-content: space-between;
+  .welcome-container{
+    width: 90%;
+    flex-flow: nowrap;
+    justify-content: space-around;
+  }
+
 
 .welcome-photos, .welcome-info{
-  width: 40%;
-  margin: 0 1.25%;
+  width: 45%;
+  margin: 5% 0;
 }
-
+}
 //OFFERINGS
 
 .offerings-item{
@@ -1301,7 +1349,7 @@ footer i:hover{
   .welcome{
     flex-flow: nowrap row;
     justify-content: space-around;
-    height: 80vh;
+    // height: 80vh;
   }
 }
 
@@ -1352,7 +1400,7 @@ footer i:hover{
 // FOOTER
 
 footer{
-  font-size: 1.25rem;
+  font-size: 1rem;
   justify-content: space-around;
 }
 .footer-copy{

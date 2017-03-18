@@ -520,8 +520,10 @@ footer{
   width: 100%;
   display: flex;
   display: -webkit-flex;
-  font-size: .9rem;
+  font-size: .8rem;
+  padding: 2vh 0;
 }
+
 .footer-copy{
   display: flex;
   display: -webkit-flex;
@@ -529,6 +531,7 @@ footer{
   flex-flow: wrap row;
   width: 100%;
   justify-content: space-around;
+  text-transform: uppercase;
 }
 .footer-tag{
   display: flex;
@@ -542,9 +545,12 @@ footer{
   display: -webkit-flex;
   width: 75%;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
+footer li{
+  margin: 0 5%;
 
+}
 footer i{
   color: $main-color;
 }
@@ -599,7 +605,7 @@ footer i:hover{
   justify-content: center;
   align-items: space-around;
   flex-flow: wrap row;
-  min-height: 300px;
+  min-height: 350px;
     .offerings-items-container{
         width: 80%;
         margin: 5% 0;
@@ -1214,11 +1220,16 @@ footer i:hover{
 
 //OFFERINGS
 
+.offerings-item{
+  min-height: 300px;
+}
+
 .offerings-items-container{
-      p{
-        margin: 2.5% 0;
+    width: 70%;
+    p{
+      margin: 2.5% 0;
     }
-    }
+  }
 
 // ABOUT PAGES
   .about-copy-wrapper{
@@ -1350,10 +1361,10 @@ footer{
   justify-content: space-between;
 }
 .footer-tag{
-  width: 60%;
+  width: 50%;
 }
 .social{
-  width: 40%;
+  width: 50%;
 }
 
 }
@@ -1390,7 +1401,18 @@ footer{
 
   .offerings-item{   
     width: 32%;
+    min-height: 350px;
   }
+
+.offerings-items-container{
+    width: 80%;
+  }
+
+//footer
+
+footer{
+    padding: 1vh 0;
+}
 
 //404
 .not-found-main{

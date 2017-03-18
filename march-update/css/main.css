@@ -171,8 +171,11 @@ button {
   border: none;
   width: 100%;
   font-size: 1rem;
+  font-weight: 700;
   box-sizing: border-box;
-  padding: 2.5%; }
+  padding: 2.5%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700; }
 
 ul {
   list-style-type: none; }
@@ -482,9 +485,12 @@ footer i:hover {
     text-align: center;
     margin-bottom: 1rem; }
   .offerings button {
+    background-color: #2EC4B6;
     font-size: 1.25rem;
     padding: 2.5% 0;
     box-sizing: border-box; }
+    .offerings button a {
+      color: white; }
 
 .offerings-item {
   background-color: #E3E3E3;
@@ -492,16 +498,27 @@ footer i:hover {
   display: flex;
   display: -webkit-flex;
   justify-content: center;
-  align-items: center;
+  align-items: space-around;
   flex-flow: wrap row;
-  min-height: 280px; }
+  min-height: 300px; }
   .offerings-item .offerings-items-container {
     width: 80%;
-    margin: 5% 0; }
+    margin: 5% 0;
+    min-height: 260px;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: wrap row; }
     .offerings-item .offerings-items-container h3 {
       font-size: 1.5rem; }
     .offerings-item .offerings-items-container p {
-      margin: 5% 0; }
+      display: flex;
+      display: -webkit-flex;
+      justify-content: center;
+      align-items: center;
+      margin: 5% 0;
+      min-height: 150px; }
 
 /* ==========================================================================
    ABOUT PAGE

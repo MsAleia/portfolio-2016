@@ -632,8 +632,6 @@ footer i:hover {
     font-weight: 700;
     line-height: 2;
     text-transform: uppercase; }
-  .about-list p {
-    line-height: 2; }
 
 .about-after-aside-copy {
   display: flex;
@@ -1025,7 +1023,7 @@ body {
   .welcome .welcome-container {
     width: 90%;
     flex-flow: nowrap;
-    justify-content: space-around; }
+    justify-content: space-between; }
   .welcome .welcome-photos, .welcome .welcome-info {
     width: 45%;
     margin: 5% 0; }

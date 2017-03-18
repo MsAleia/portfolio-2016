@@ -762,9 +762,6 @@ footer i:hover{
     line-height: 2;
     text-transform: uppercase;
   }
-  p{
-    line-height: 2;
-  }
 }
 
 .about-after-aside-copy{
@@ -1257,7 +1254,7 @@ footer i:hover{
   .welcome-container{
     width: 90%;
     flex-flow: nowrap;
-    justify-content: space-around;
+    justify-content: space-between;
   }
 
 

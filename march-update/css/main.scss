@@ -962,9 +962,9 @@ footer i:hover{
           border: none;
           font-size: 1.5rem;
           font-weight: 700;
-          width: 100%;
           padding: .5rem 4rem;
-          width: 100%;
+          width: 50%;
+          margin: 1rem 0 0 0;
           height: auto;
         }
     }
@@ -1411,13 +1411,10 @@ footer{
 }
 .welcome{
 .welcome-container{
-  background-color: blue;
   width: 80%;
   .welcome-photos{
-    background-color: pink;
   }
   .welcome-info{
-    background-color: lightblue;
   }
 }
 }

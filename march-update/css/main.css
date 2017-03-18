@@ -804,9 +804,9 @@ footer i:hover {
       border: none;
       font-size: 1.5rem;
       font-weight: 700;
-      width: 100%;
       padding: .5rem 4rem;
-      width: 100%;
+      width: 50%;
+      margin: 1rem 0 0 0;
       height: auto; }
 
 body {
@@ -1115,12 +1115,7 @@ body {
     margin: 2.5% 0 0 0; }
 
   .welcome .welcome-container {
-    background-color: blue;
     width: 80%; }
-    .welcome .welcome-container .welcome-photos {
-      background-color: pink; }
-    .welcome .welcome-container .welcome-info {
-      background-color: lightblue; }
 
   .offerings-container-wrapper {
     display: -webkit-flex;

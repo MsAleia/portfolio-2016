@@ -181,6 +181,10 @@ $font-sans-hairline: 'Montserrat Hairline', sans-serif;
   font-weight: 700;
   color: $secondary-color;
 }
+
+.italic{
+  font-style: italic;
+}
 /* ==========================================================================
 Color/Font Guidelines
 
@@ -223,7 +227,7 @@ button{
   width: 100%;
   font-size: 1rem;
   box-sizing: border-box;
-  padding: 2.5% 2.5%;
+  padding: 2.5%;
 }
 
 ul{
@@ -506,7 +510,7 @@ figure.aleia-photo img {
    ========================================================================== */
 footer{
   background-color: $accent-color;
-  color: $standard-grey;
+  color: $main-color;
   font-family: $font-body;
   height: 10vh;
   width: 100%;
@@ -538,7 +542,7 @@ footer{
 }
 
 footer i{
-  color: $standard-grey;
+  color: $main-color;
 }
 footer i:hover{
   color: $secondary-color;
@@ -552,6 +556,57 @@ footer i:hover{
   color: $secondary-color;
   font-size: 1.25rem;
 }
+/* ==========================================================================
+   OFFERINGS
+   ========================================================================== */
+.offerings{
+  background-color: $accent-grey;
+  padding: 2.5% 0;
+  display: flex;
+  display: -webkit-flex;
+  content-align: center;
+  justify-content: center;
+  .offerings-container{
+    width: 90%;
+  }
+  h2{
+      @include font-header;
+      text-transform: uppercase;
+      font-size: 2rem;
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    button{
+      font-size: 1.25rem;
+      padding: 2.5% 0;
+      box-sizing: border-box;
+    }
+}
+
+.offerings-item{
+  background-color: $standard-grey;
+  margin: 2.5% 0;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap row;
+  min-height: 280px;
+    .offerings-items-container{
+        width: 80%;
+        margin: 5% 0;
+      h3{
+        font-size: 1.5rem;
+      }
+      p{
+        margin: 5% 0;
+      }
+    }
+    .offerings-item-wrapper{
+
+    }
+}
+
 /* ==========================================================================
    ABOUT PAGE
    ========================================================================== */
@@ -610,7 +665,7 @@ footer i:hover{
       #mc_embed_signup{
         margin: 0;
     }
-    h1{
+    h2{
       @include font-display;
       font-size: 3.25rem;
       text-align: left;
@@ -1137,7 +1192,13 @@ footer i:hover{
   margin: 0 1.25%;
 }
 
+//OFFERINGS
 
+.offerings-items-container{
+      p{
+        margin: 2.5% 0;
+    }
+    }
 
 // ABOUT PAGES
   .about-copy-wrapper{
@@ -1296,17 +1357,20 @@ footer{
     margin: 2.5% 0 0 0;
   }
 }
-// .email-signup{
-//   .ck_form.ck_naked{
-//   margin: 0;
-// }
 
-// SALES
-// .sales{
-//   .welcome-sales{
-//     flex-flow: row wrap;
-//   }
-// }
+//OFFERINGS
+.offerings-container-wrapper{
+  display: -webkit-flex;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  // min-width: 380px;
+}
+
+  .offerings-item{   
+    width: 32%;
+  }
 
 //404
 .not-found-main{

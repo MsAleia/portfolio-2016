@@ -130,6 +130,9 @@ table {
 @font-face {
   font-family: 'Montserrat Light';
   src: url("../fonts/Montserrat-Light.otf"); }
+.italic {
+  font-style: italic; }
+
 /* ==========================================================================
 Color/Font Guidelines
 
@@ -169,7 +172,7 @@ button {
   width: 100%;
   font-size: 1rem;
   box-sizing: border-box;
-  padding: 2.5% 2.5%; }
+  padding: 2.5%; }
 
 ul {
   list-style-type: none; }
@@ -416,7 +419,7 @@ figure.aleia-photo img {
    ========================================================================== */
 footer {
   background-color: #EFFFE9;
-  color: #E3E3E3;
+  color: #011627;
   font-family: "Montserrat Light", sans-serif;
   height: 10vh;
   width: 100%;
@@ -447,7 +450,7 @@ footer {
   justify-content: space-between; }
 
 footer i {
-  color: #E3E3E3; }
+  color: #011627; }
 
 footer i:hover {
   color: #2EC4B6; }
@@ -458,6 +461,47 @@ footer i:hover {
 .cta {
   color: #2EC4B6;
   font-size: 1.25rem; }
+
+/* ==========================================================================
+   OFFERINGS
+   ========================================================================== */
+.offerings {
+  background-color: #EEEEEE;
+  padding: 2.5% 0;
+  display: flex;
+  display: -webkit-flex;
+  content-align: center;
+  justify-content: center; }
+  .offerings .offerings-container {
+    width: 90%; }
+  .offerings h2 {
+    font-family: 'Montserrat';
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem; }
+  .offerings button {
+    font-size: 1.25rem;
+    padding: 2.5% 0;
+    box-sizing: border-box; }
+
+.offerings-item {
+  background-color: #E3E3E3;
+  margin: 2.5% 0;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap row;
+  min-height: 280px; }
+  .offerings-item .offerings-items-container {
+    width: 80%;
+    margin: 5% 0; }
+    .offerings-item .offerings-items-container h3 {
+      font-size: 1.5rem; }
+    .offerings-item .offerings-items-container p {
+      margin: 5% 0; }
 
 /* ==========================================================================
    ABOUT PAGE
@@ -511,7 +555,7 @@ footer i:hover {
           object-fit: cover; }
     .about-copy .about-copy-wrapper #mc_embed_signup {
       margin: 0; }
-    .about-copy .about-copy-wrapper h1 {
+    .about-copy .about-copy-wrapper h2 {
       font-family: 'NarzissRegular-Drops';
       text-transform: uppercase;
       font-size: 3.25rem;
@@ -929,6 +973,9 @@ body {
     width: 40%;
     margin: 0 1.25%; }
 
+  .offerings-items-container p {
+    margin: 2.5% 0; }
+
   .about-copy-wrapper aside .about-aside-photo {
     margin-left: .5rem; }
 
@@ -1022,6 +1069,16 @@ body {
       width: 100%; }
   .welcome-right .opt-in-tagline {
     margin: 2.5% 0 0 0; }
+
+  .offerings-container-wrapper {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap; }
+
+  .offerings-item {
+    width: 32%; }
 
   .not-found-main {
     padding: 2vh 8vh; } }

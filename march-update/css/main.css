@@ -931,8 +931,7 @@ body {
   color: white;
   min-height: 100vh;
   display: flex;
-  display: -webkit-flex;
-  justify-content: space-between; }
+  display: -webkit-flex; }
   .interest-list .wrapper {
     display: flex;
     display: -webkit-flex;
@@ -941,13 +940,13 @@ body {
       display: flex;
       display: -webkit-flex;
       justify-content: center;
+      align-items: center;
       flex-flow: wrap row;
-      width: 100%;
-      padding: 5% 0; }
+      width: 100%; }
       .interest-list .wrapper header .logo-il {
         width: 50%;
         margin: 0 0 .5rem 0;
-        max-width: 450px; }
+        max-width: 200px; }
         .interest-list .wrapper header .logo-il img {
           width: 100%; }
       .interest-list .wrapper header h2 {
@@ -955,24 +954,43 @@ body {
         text-transform: uppercase;
         font-size: 2.5rem; }
     .interest-list .wrapper .interest-list-description {
-      height: 300px;
-      background-color: violet;
+      background-color: #EEEEEE;
+      color: #011627;
       width: 100%;
       display: flex;
       display: -webkit-flex;
-      justify-content: center; }
+      justify-content: center;
+      align-items: center; }
       .interest-list .wrapper .interest-list-description .il-header-description {
-        background-color: lightsalmon;
-        width: 80%; }
+        width: 80%;
+        margin: 10% 0;
+        text-align: left; }
+        .interest-list .wrapper .interest-list-description .il-header-description h2 {
+          font-weight: 700;
+          margin: 5% 0 2.5% 0;
+          text-transform: uppercase; }
+        .interest-list .wrapper .interest-list-description .il-header-description ul {
+          list-style-type: square;
+          list-style-position: inside;
+          margin: 2.5% 0; }
+          .interest-list .wrapper .interest-list-description .il-header-description ul li {
+            display: list-item;
+            line-height: 1.4; }
     .interest-list .wrapper .convertkit {
-      background-color: #f9f9f9;
-      width: 100%; }
+      background-color: red;
+      width: 100%;
+      display: flex;
+      display: -webkit-flex;
+      justify-content: center;
+      align-items: flex-end; }
       .interest-list .wrapper .convertkit .ck_form_container.ck_inline {
         width: 100%;
         display: flex;
         display: -webkit-flex;
         justify-content: center;
-        background-color: #EEEEEE; }
+        align-items: center;
+        height: 336px;
+        background-color: #2EC4B6; }
         .interest-list .wrapper .convertkit .ck_form_container.ck_inline .ck_form.ck_minimal {
           width: 80%; }
 

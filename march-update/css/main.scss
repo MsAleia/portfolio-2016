@@ -1130,7 +1130,6 @@ footer i:hover{
     min-height: 100vh;
     display: flex;
     display: -webkit-flex;
-    justify-content: space-between;
     .wrapper{
       display: flex;
       display: -webkit-flex;
@@ -1139,13 +1138,14 @@ footer i:hover{
         display: flex;
         display: -webkit-flex;
         justify-content: center;
+        align-items: center;
         flex-flow: wrap row;
         width: 100%;
-        padding: 5% 0;
+        // padding: 5% 0;
         .logo-il{
           width: 50%;
           margin: 0 0 .5rem 0;
-          max-width: 450px;
+          max-width: 200px;
           img{
             width: 100%;
           }
@@ -1157,26 +1157,48 @@ footer i:hover{
 
       }
       .interest-list-description{
-        height: 300px;
-        background-color: violet;
+        background-color: $accent-grey;
+        color: $main-color;
         width: 100%;
         display: flex;
         display: -webkit-flex;
         justify-content: center;
+        align-items: center;
         .il-header-description{
-          background-color: lightsalmon;
           width: 80%;
+          margin: 10% 0; 
+          text-align: left;
+          h2{
+            font-weight: 700;
+            margin: 5% 0 2.5% 0;
+            text-transform: uppercase;
+          }
+          ul{
+            list-style-type: square; 
+            list-style-position: inside;
+            margin: 2.5% 0;
+            li{
+            display: list-item;
+            line-height: 1.4;
+          }
+          }
         }
       }
       .convertkit{
-        background-color: #f9f9f9;
+        background-color: red;
         width: 100%;
+        display: flex;
+          display: -webkit-flex;
+          justify-content: center;
+          align-items: flex-end;
         .ck_form_container.ck_inline{
           width: 100%;
           display: flex;
           display: -webkit-flex;
           justify-content: center;
-          background-color: $accent-grey;
+          align-items: center;
+          height: 336px;
+          background-color: $secondary-color;
         .ck_form.ck_minimal{
           width: 80%;
         }

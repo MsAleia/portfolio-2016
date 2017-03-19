@@ -124,12 +124,6 @@ table {
 /* ==========================================================================
    Author's global styles
    ========================================================================== */
-@font-face {
-  font-family: 'Montserrat Hairline';
-  src: url("../fonts/Montserrat-Hairline.otf"); }
-@font-face {
-  font-family: 'Montserrat Light';
-  src: url("../fonts/Montserrat-Light.otf"); }
 .italic {
   font-style: italic; }
 
@@ -639,9 +633,6 @@ footer i:hover {
   align-items: center;
   flex-flow: wrap column;
   margin: 2.5% 0 0 0; }
-  .about-after-aside-copy p {
-    width: 50%;
-    margin: 0 0 1rem 0; }
 
 /* ==========================================================================
    WORK WITH ME
@@ -933,6 +924,59 @@ body {
     padding: 0px 10px; }
 
 /* ==========================================================================
+   Interest list
+   ========================================================================== */
+.interest-list {
+  background-color: #011627;
+  color: white;
+  min-height: 100vh;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: space-between; }
+  .interest-list .wrapper {
+    display: flex;
+    display: -webkit-flex;
+    flex-flow: row wrap; }
+    .interest-list .wrapper header {
+      display: flex;
+      display: -webkit-flex;
+      justify-content: center;
+      flex-flow: wrap row;
+      width: 100%;
+      padding: 5% 0; }
+      .interest-list .wrapper header .logo-il {
+        width: 50%;
+        margin: 0 0 .5rem 0;
+        max-width: 450px; }
+        .interest-list .wrapper header .logo-il img {
+          width: 100%; }
+      .interest-list .wrapper header h2 {
+        font-family: 'NarzissRegular-Drops';
+        text-transform: uppercase;
+        font-size: 2.5rem; }
+    .interest-list .wrapper .interest-list-description {
+      height: 300px;
+      background-color: violet;
+      width: 100%;
+      display: flex;
+      display: -webkit-flex;
+      justify-content: center; }
+      .interest-list .wrapper .interest-list-description .il-header-description {
+        background-color: lightsalmon;
+        width: 80%; }
+    .interest-list .wrapper .convertkit {
+      background-color: #f9f9f9;
+      width: 100%; }
+      .interest-list .wrapper .convertkit .ck_form_container.ck_inline {
+        width: 100%;
+        display: flex;
+        display: -webkit-flex;
+        justify-content: center;
+        background-color: #EEEEEE; }
+        .interest-list .wrapper .convertkit .ck_form_container.ck_inline .ck_form.ck_minimal {
+          width: 80%; }
+
+/* ==========================================================================
    Helper classes
    ========================================================================== */
 /*
@@ -1027,6 +1071,11 @@ body {
   #email-archive .welcome {
     justify-content: space-around; }
 
+  .about-after-aside-copy p {
+    width: 75%;
+    margin: 0 0 1rem 0;
+    max-width: 675px; }
+
   .sales .welcome {
     flex-flow: wrap; }
   .sales .welcome-sales .welcome-sales-wrapper {
@@ -1116,6 +1165,9 @@ body {
 
   .welcome .welcome-container {
     width: 80%; }
+
+  .about-after-aside-copy p {
+    margin: 0 0 1rem 0; }
 
   .offerings-container-wrapper {
     display: -webkit-flex;

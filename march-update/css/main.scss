@@ -1474,6 +1474,17 @@ footer{
   width: 50%;
 }
 
+// Interest Lists
+.interest-list{
+  .wrapper{
+.interest-list-description{
+  .il-header-description{
+    margin: 5% 0; 
+      }
+    }
+  }
+}
+
 }
 @media only screen and (min-width: 1200px) {
 
@@ -1538,8 +1549,16 @@ footer{
     padding: 1vh 0;
 }
 
-//sales
-
+// Interest Lists
+.interest-list{
+  .wrapper{
+    .interest-list-description{
+    .il-header-description{
+      width: 50%;
+      }
+    }
+  }
+}
 
 //404
 .not-found-main{

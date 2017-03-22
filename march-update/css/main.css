@@ -1018,8 +1018,7 @@ body {
   filter: saturate(0.5);
   background-size: cover;
   width: 100%;
-  height: 800px;
-  background-position: center top;
+  padding: 20% 0;
   display: flex;
   display: -webkit-flex;
   justify-content: center;
@@ -1055,7 +1054,8 @@ body {
   display: -webkit-flex;
   justify-content: center;
   flex-flow: wrap row;
-  text-align: left; }
+  text-align: left;
+  width: 100%; }
   .fp-dark div {
     width: 80%;
     font-size: 1.25rem;
@@ -1285,7 +1285,9 @@ body {
     width: 50%; }
 
   .interest-list .wrapper .interest-list-description .il-header-description {
-    margin: 5% 0; }
+    margin: 2.5% 0; }
+    .interest-list .wrapper .interest-list-description .il-header-description h2 {
+      margin: 0 0 2.5% 0; }
 
   .module {
     display: flex;

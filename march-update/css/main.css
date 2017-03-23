@@ -1108,6 +1108,12 @@ body {
       font-family: "Montserrat", sans-serif;
       font-weight: 700; }
 
+.social-media-photos img {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */

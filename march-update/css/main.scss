@@ -1388,6 +1388,11 @@ footer i:hover{
   }
 }
 
+#wip-block-r,
+#wip-block-siab{
+  background-color: $accent-grey;
+}
+
 // Pinterest images hide
 
 .social-media-photos{
@@ -1398,6 +1403,8 @@ footer i:hover{
   left: 0;
   }
 }
+
+
 
 /* ==========================================================================
    Helper classes
@@ -1705,7 +1712,6 @@ footer{
     margin: 2.5% 0;
   }
 }
-
 }
 @media only screen and (min-width: 1200px) {
 

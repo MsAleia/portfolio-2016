@@ -1142,6 +1142,10 @@ body {
     object-fit: cover;
     max-height: 300px; }
 
+#wip-block-r,
+#wip-block-siab {
+  background-color: #EEEEEE; }
+
 .social-media-photos img {
   opacity: 0;
   position: absolute;

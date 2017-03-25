@@ -1079,7 +1079,8 @@ body {
       font-weight: 700;
       text-transform: uppercase;
       color: #2EC4B6;
-      font-size: 2.5rem; }
+      font-size: 2.5rem;
+      margin: 0 0 2.5% 0; }
     .fp-dark div p {
       margin-bottom: 0.9rem;
       font-family: "Montserrat Light", sans-serif; }
@@ -1111,6 +1112,9 @@ body {
       background-color: #011627;
       border-radius: 50%;
       margin: 5% 0 0 5%; }
+      .module .module-item .number p {
+        line-height: 1;
+        margin: 0 !important; }
     .module .module-item .module-description {
       font-size: 1.5rem;
       width: 90%;
@@ -1329,13 +1333,21 @@ body {
     display: flex;
     display: -webkit-flex;
     flex-flow: wrap column; }
-    .module .module-item .number {
-      justify-content: flex-end; }
+    .module .module-item {
+      justify-content: space-around; }
+      .module .module-item .number {
+        margin: 5% 0 0 0; }
+      .module .module-item .module-description {
+        width: 60%;
+        margin: 5% 0; }
 
   .familiar-photo {
     margin: 5% 0; }
     .familiar-photo img {
-      max-height: 550px; } }
+      max-height: 550px; }
+
+  #r-wip h2, #siab-wip h2 {
+    margin: 2.5% 0; } }
 @media only screen and (min-width: 1200px) {
   .welcome-left {
     width: 40%;
@@ -1385,6 +1397,17 @@ body {
         max-height: 525px; }
     #aleia-bio-sales-pages .familiar {
       width: 60%; }
+
+  .module {
+    flex-flow: wrap row; }
+    .module .module-item {
+      width: 60%;
+      margin: 2.5% 0 0 0; }
+    .module .module-item:last-child {
+      margin: 2.5% 0 0 0; }
+
+  #module-right {
+    margin: 2.5% 0 0 40%; }
 
   .not-found-main {
     padding: 2vh 8vh; } }

@@ -1144,6 +1144,7 @@ footer i:hover{
     min-height: 100vh;
     display: flex;
     display: -webkit-flex;
+    flex-flow: row wrap;
     .wrapper{
       display: flex;
       display: -webkit-flex;

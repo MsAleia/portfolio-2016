@@ -940,7 +940,8 @@ body {
   color: white;
   min-height: 100vh;
   display: flex;
-  display: -webkit-flex; }
+  display: -webkit-flex;
+  flex-flow: row wrap; }
   .interest-list .wrapper {
     display: flex;
     display: -webkit-flex;

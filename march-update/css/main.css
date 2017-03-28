@@ -1007,17 +1007,17 @@ body {
         width: 100%; }
       .interest-list .wrapper .convertkit .ck_form_container.ck_inline {
         width: 100%;
-        padding: 5% 0;
+        padding: 1.25% 0;
         display: flex;
         display: -webkit-flex;
         justify-content: center;
         align-items: center;
-        height: 336px;
+        min-height: 336px;
         background-color: #2EC4B6; }
         .interest-list .wrapper .convertkit .ck_form_container.ck_inline .ck_form.ck_minimal {
           width: 80%; }
       .interest-list .wrapper .convertkit aside {
-        padding: 2.5% 0;
+        padding: 1.25% 0;
         font-size: 1.25rem; }
         .interest-list .wrapper .convertkit aside i, .interest-list .wrapper .convertkit aside a {
           text-transform: uppercase; }
@@ -1081,6 +1081,21 @@ body {
       color: #2EC4B6;
       font-size: 2.5rem;
       margin: 0 0 2.5% 0; }
+    .fp-dark div aside {
+      background-color: #EEEEEE;
+      color: #011627;
+      padding: 5%;
+      margin: 10% 0 2.5% 0; }
+      .fp-dark div aside h3 {
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #2EC4B6;
+        font-size: 1.5rem;
+        margin-bottom: .5rem; }
+      .fp-dark div aside i {
+        color: #2EC4B6; }
+    .fp-dark div .who-not i {
+      color: #E71D36; }
     .fp-dark div p {
       margin-bottom: 0.9rem;
       font-family: "Montserrat Light", sans-serif; }
@@ -1147,10 +1162,49 @@ body {
   background-color: #EEEEEE; }
 
 .social-media-photos img {
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  left: 0; }
+  display: none; }
+
+/* ==========================================================================
+   PAYMENT
+   ========================================================================== */
+.gumroad .sell-date {
+  font-family: "Montserrat Hairline", sans-serif;
+  font-style: italic;
+  margin: 0; }
+.gumroad article {
+  background-color: white;
+  color: #011627;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  margin: 5% 0; }
+  .gumroad article .payment-plan span {
+    color: #2EC4B6;
+    font-size: 2.5rem; }
+  .gumroad article .card-small {
+    font-size: 1rem; }
+    .gumroad article .card-small .payment-plan {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 700; }
+    .gumroad article .card-small button {
+      padding: .5rem 0; }
+      .gumroad article .card-small button a {
+        font-size: 1rem;
+        font-weight: 400; }
+.gumroad .plan-savings {
+  font-size: 1rem;
+  font-family: "Montserrat Hairline", sans-serif;
+  font-style: italic;
+  margin: 0; }
+.gumroad button {
+  background-color: #E71D36;
+  padding: 1rem 0; }
+  .gumroad button a {
+    color: white; }
+
+.lower-purchase {
+  width: 60%; }
 
 /* ==========================================================================
    Helper classes
@@ -1328,6 +1382,8 @@ body {
   .social {
     width: 50%; }
 
+  .interest-list .wrapper .interest-list-description #how-this-works {
+    margin: 0; }
   .interest-list .wrapper .interest-list-description .il-header-description {
     margin: 2.5% 0; }
     .interest-list .wrapper .interest-list-description .il-header-description h2 {
@@ -1351,7 +1407,10 @@ body {
       max-height: 550px; }
 
   #r-wip h2, #siab-wip h2 {
-    margin: 2.5% 0; } }
+    margin: 2.5% 0; }
+
+  .fp-dark div aside {
+    margin: 5% 0 0 0; } }
 @media only screen and (min-width: 1200px) {
   .welcome-left {
     width: 40%;
@@ -1407,14 +1466,23 @@ body {
     .module .module-item {
       width: 60%;
       margin: 2.5% 0 0 0; }
-    .module .module-item:last-child {
-      margin: 2.5% 0 0 0; }
-
-  #module-right {
-    margin: 2.5% 0 0 40%; }
+    .module .module-right {
+      margin: 2.5% 0 0 40%; }
 
   .not-found-main {
-    padding: 2vh 8vh; } }
+    padding: 2vh 8vh; }
+
+  .fp-dark .fit-container {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    flex-flow: wrap row; }
+    .fp-dark .fit-container .fit-header {
+      margin: 1.25% 0; }
+    .fp-dark .fit-container aside {
+      width: 40%;
+      margin: 0;
+      padding: 2.5%; } }
 @media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */ }
 /* ==========================================================================

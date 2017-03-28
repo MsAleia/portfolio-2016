@@ -1224,19 +1224,19 @@ footer i:hover{
           }
         .ck_form_container.ck_inline{
           width: 100%;
-          padding: 5% 0;
+          padding: 1.25% 0;
           display: flex;
           display: -webkit-flex;
           justify-content: center;
           align-items: center;
-          height: 336px;
+          min-height: 336px;
           background-color: $secondary-color;
         .ck_form.ck_minimal{
           width: 80%;
         }
         }
         aside{
-          padding: 2.5% 0;
+          padding: 1.25% 0;
           font-size: 1.25rem;
           i, a{
             text-transform: uppercase;
@@ -1312,6 +1312,27 @@ footer i:hover{
       font-size: 2.5rem;
       margin: 0 0 2.5% 0;
     }
+    aside{
+      background-color: $accent-grey;
+      color: $main-color;
+      padding: 5%;
+      margin: 10% 0 2.5% 0;
+      h3{
+        font-weight: 700;
+        text-transform: uppercase;
+        color: $secondary-color;
+        font-size: 1.5rem;
+        margin-bottom: .5rem;
+      }
+      i{
+        color: $secondary-color;
+      }
+    }
+    .who-not{
+      i{
+        color: $button-color;
+      }
+    }
     p{
       margin-bottom: 0.9rem;
       font-family: $font-body;
@@ -1332,7 +1353,6 @@ footer i:hover{
     flex-flow: wrap row;
     justify-content: flex-start;
     text-align: left;
-    // padding: 5% 0;
     margin: 5% 0;
     background-color: $accent-grey;
     .number{
@@ -1397,13 +1417,69 @@ footer i:hover{
 
 .social-media-photos{
   img{
-  opacity: 0;
-  position: absolute;
-  top: 0;
-  left: 0;
+  display: none;
   }
 }
 
+/* ==========================================================================
+   PAYMENT
+   ========================================================================== */
+.gumroad{
+.sell-date{
+  font-family: $font-sans-hairline;
+  font-style: italic;
+  margin: 0;
+
+}
+  article{
+    background-color: white;
+    color: $main-color;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    margin: 5% 0;
+    .payment-plan{
+      span{
+        color: $secondary-color;
+        font-size: 2.5rem;
+      }
+    }
+    .card-small{
+      // width: 60%;
+      font-size: 1rem;
+      .payment-plan{
+        font-family: $font-regular;
+        font-weight: 700;
+    }
+      button{
+        padding: .5rem 0;
+      a{
+        font-size: 1rem;
+        font-weight: 400;
+      }
+    }
+    }
+  }
+
+.plan-savings{
+  font-size: 1rem;
+  font-family: $font-sans-hairline;
+  font-style: italic;
+  margin: 0;
+}
+button{
+  background-color: $button-color;
+  padding: 1rem 0;
+  a{
+    color: white;
+  }
+}
+}
+
+.lower-purchase{
+  width: 60%;
+}
 
 
 /* ==========================================================================
@@ -1671,7 +1747,11 @@ footer{
 // Interest Lists
 .interest-list{
   .wrapper{
+
 .interest-list-description{
+  #how-this-works{
+      margin: 0;
+  }
   .il-header-description{
     margin: 2.5% 0;
     h2{
@@ -1712,6 +1792,15 @@ footer{
     margin: 2.5% 0;
   }
 }
+
+.fp-dark{
+  div{
+    aside{
+      margin: 5% 0 0 0;
+    }
+  }
+}
+
 }
 @media only screen and (min-width: 1200px) {
 
@@ -1801,18 +1890,30 @@ footer{
       width: 60%;
       margin: 2.5% 0 0 0; 
     }
-    .module-item:last-child{
-      margin: 2.5% 0 0 0; 
+    .module-right{
+      margin: 2.5% 0 0 40%;
     }
-  }
-
-#module-right{
- margin: 2.5% 0 0 40%;
 }
-
 //404
 .not-found-main{
   padding: 2vh 8vh;
+}
+
+.fp-dark{
+  .fit-container{
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    flex-flow: wrap row;
+    .fit-header{
+      margin: 1.25% 0;
+    }
+    aside{
+      width: 40%;
+      margin: 0;
+      padding: 2.5%;
+    }
+  }
 }
 
 }

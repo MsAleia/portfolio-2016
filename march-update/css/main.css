@@ -585,7 +585,7 @@ footer i:hover {
         align-items: center;
         flex-flow: wrap row; }
       .about-copy .about-copy-wrapper aside .about-aside-photo {
-        background: url(../img/aleia-3.jpg) no-repeat center;
+        background: url(../img/aleia-7.jpg) no-repeat center;
         background-size: cover;
         height: 20rem;
         max-height: 400px;
@@ -979,7 +979,8 @@ body {
           font-size: 1.25rem;
           line-height: 1.4; }
           .interest-list .wrapper .interest-list-description .il-header-description .familiar p {
-            margin-bottom: 0.9rem; }
+            margin-bottom: 0.9rem;
+            font-size: 1rem; }
             .interest-list .wrapper .interest-list-description .il-header-description .familiar p span {
               font-family: "Montserrat", sans-serif;
               font-weight: 700;
@@ -1028,7 +1029,7 @@ body {
           color: #E71D36; }
 
 .sales-img {
-  background: url("../img/freelance-plan-hero.jpeg");
+  background: url("../img/freelance-plan-hero.jpg") 0;
   -webkit-filter: saturate(0.5);
   filter: saturate(0.5);
   background-size: cover;
@@ -1161,6 +1162,9 @@ body {
 #wip-block-r,
 #wip-block-siab {
   background-color: #EEEEEE; }
+  #wip-block-r p,
+  #wip-block-siab p {
+    font-size: 1rem; }
 
 .social-media-photos img {
   display: none; }

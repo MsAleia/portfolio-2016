@@ -698,7 +698,7 @@ footer i:hover{
         flex-flow: wrap row;
       }
       .about-aside-photo{
-        background: url(../img/aleia-3.jpg) no-repeat center;
+        background: url(../img/aleia-7.jpg) no-repeat center;
         background-size: cover;
         height: 20rem;
         max-height: 400px;
@@ -1188,6 +1188,7 @@ footer i:hover{
             line-height: 1.4;
             p{
                 margin-bottom: 0.9rem;
+                font-size: 1rem;
             span{
               font-family: $font-regular;
               font-weight: 700;
@@ -1254,7 +1255,7 @@ footer i:hover{
   }
 
 .sales-img{
-  background: url('../img/freelance-plan-hero.jpeg');
+  background: url('../img/freelance-plan-hero.jpg') 0;
   -webkit-filter: saturate(.5);
   filter: saturate(.5);
   background-size: cover;
@@ -1412,6 +1413,9 @@ footer i:hover{
 #wip-block-r,
 #wip-block-siab{
   background-color: $accent-grey;
+  p{
+    font-size: 1rem;
+  }
 }
 
 // Pinterest images hide

@@ -1184,6 +1184,8 @@ body {
   justify-content: center;
   flex-flow: row wrap;
   margin: 5% 0; }
+  .gumroad article ul li {
+    display: inline-block; }
   .gumroad article .payment-plan span {
     color: #2EC4B6;
     font-size: 2.5rem; }

@@ -1444,6 +1444,9 @@ footer i:hover{
     justify-content: center;
     flex-flow: row wrap;
     margin: 5% 0;
+    ul li{
+      display: inline-block;
+    }
     .payment-plan{
       span{
         color: $secondary-color;

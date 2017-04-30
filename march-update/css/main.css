@@ -219,14 +219,25 @@ main {
   color: #EFFFE9;
   display: -webkit-flex;
   display: flex;
-  justify-content: space-between;
+  flex-flow: wrap column;
+  justify-content: center;
   align-items: center;
-  padding: 1vh 5vw;
-  width: 90vw;
-  height: 8vh; }
+  padding: 2em 0;
+  width: 100%; }
 
 .logo {
-  width: 25%; }
+  width: 40%;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+#home-menu {
+  padding-top: 1em; }
+  #home-menu li {
+    display: block;
+    margin: 2.5%;
+    text-transform: uppercase; }
 
 /* ==========================================================================
    MENU STYLES
@@ -902,8 +913,6 @@ body {
     float: left;
     height: 42px;
     white-space: nowrap;
-    /*added because text was overflowing button */
-    font-size: .8rem;
     /*added because text was overflowing button */ }
   .email-signup .ck_converted_content {
     display: none;
@@ -1284,12 +1293,25 @@ body {
    ========================================================================== */
 @media only screen and (min-width: 768px) {
   .logo {
-    width: 10%; }
+    width: 10%;
+    padding-right: 2.5%; }
+
+  .page-header {
+    flex-flow: wrap row;
+    justify-content: space-around; }
+
+  #home-menu {
+    width: 40%;
+    padding-left: 2.5%;
+    padding-top: 0; }
+    #home-menu li {
+      display: inline;
+      font-size: 1.5rem; }
 
   .welcome .welcome-container {
     width: 90%;
     flex-flow: nowrap;
-    justify-content: space-between; }
+    justify-content: space-around; }
   .welcome .welcome-photos, .welcome .welcome-info {
     width: 45%;
     margin: 5% 0; }

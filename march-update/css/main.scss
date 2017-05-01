@@ -1200,7 +1200,7 @@ footer i:hover{
             line-height: 1.4;
             p{
                 margin-bottom: 0.9rem;
-                font-size: 1rem;
+                font-size: 1.5rem;
             span{
               font-family: $font-regular;
               font-weight: 700;
@@ -1252,6 +1252,9 @@ footer i:hover{
         aside{
           padding: 1.25% 0;
           font-size: 1.25rem;
+          p{
+            font-family: $font-sans-hairline;
+          }
           i, a{
             text-transform: uppercase;
           }
@@ -1314,11 +1317,12 @@ footer i:hover{
   flex-flow: wrap row;
   text-align: left;
   width: 100%;
+  background-color: $secondary-color;
   div{
     width: 80%;
     font-size: 1.25rem;
     line-height: 1.4;
-    margin: 5% 0; 
+    margin: 0 0 5% 0; 
     h2{
       font-weight: 700;
       text-transform: uppercase;
@@ -1334,9 +1338,13 @@ footer i:hover{
       h3{
         font-weight: 700;
         text-transform: uppercase;
-        color: $secondary-color;
+        @include font-display;
+        color: $main-color;
         font-size: 1.5rem;
         margin-bottom: .5rem;
+        font-size: 2rem;
+        text-decoration: underline;
+        text-decoration-color:$secondary-color; 
       }
       i{
         color: $secondary-color;
@@ -1430,6 +1438,16 @@ footer i:hover{
   }
 }
 
+  #calendly{
+    width: 100%;
+    p{
+      font-size: 2rem;
+    }
+    a{
+      color: $main-color;
+    }
+  }
+
 // Pinterest images hide
 
 .social-media-photos{
@@ -1437,6 +1455,151 @@ footer i:hover{
   display: none;
   }
 }
+
+/* ==========================================================================
+   FREELANCE PLAN UPDATE
+   ========================================================================== */
+   #freelance-plan-container{
+    span{
+      @include font-display;
+    }
+    .emphasis{
+        font-size: 2.5rem;
+      }
+   }
+
+   #freelance-plan{
+    background-color: $accent-grey;
+    color: $main-color;
+    font-family: $font-sans-hairline;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../img/freelance-plan-aleia-walker.jpg') top center;
+    background-size: cover;
+    height: 600px;
+      aside{
+        font-size: 1.75rem;
+        color: white;
+        width: 80%;
+        .display{
+          text-transform: uppercase;
+        }
+        span{
+          font-family: $font-body;
+          color: $secondary-color;
+        }
+      p{
+        background: rgba(1, 22, 39, 0.6);
+        padding: 5% 2.5%;
+      }
+      }
+   }
+
+   .fp-text{
+      background-color: white;
+      color: $main-color;
+      display: flex;
+      display: -webkit-flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      font-size: 1.5rem;
+      div{
+        margin: 5% 0;
+        width: 80%;
+        p{
+          margin: 2rem 0;
+        }
+      }
+   }
+
+   .fp-solution{
+      background: url('../img/beach-sea-freelance.jpg') 100%;
+      background-size: cover;
+      // background-color: $standard-grey;
+      color: $main-color;
+      display: flex;
+      display: -webkit-flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: row wrap;
+      width: 100%;
+      padding: 10% 0;
+      .emphasis{
+        margin: 0 0 1.25% 0;
+      }
+      div, article{
+        margin: 2.5% 0;
+        width: 80%;
+        // padding: 2.5% 5%;
+        p{
+          margin: 2rem 0;
+        }
+      }
+      ul li{
+        display: block;
+        font-size: 1.25rem;
+        text-align: left;
+        line-height: 1.6;
+      }
+      .fp-solution-wrapper{
+        background: rgba(255, 255, 255, 0.6);
+        display: flex;
+        display: -webkit-flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row wrap;
+        padding: 5% 0 0 0; 
+      }
+      article{
+        width: 100%;
+        background: rgba(46, 196, 182, 0.6);
+        display: flex;
+        display: -webkit-flex;
+        justify-content: center;
+        flex-flow: row wrap;
+        margin: 2.5% 0 0 0;
+        font-size: 1.5rem;
+        .card{
+          margin: 10% 0;
+          button{
+          padding: 1rem 0;
+          font-size: 1.5rem;
+          background-color: $button-color;
+          a{
+            font-size: 1rem;
+            font-weight: 400;
+          }
+        }
+        }
+        p{
+          margin: .5rem 0;
+        }
+      }
+      .plan-savings{
+        font-size: 1rem;
+        font-family: $font-sans-hairline;
+        font-style: italic;
+        margin: 0;
+        a{
+          color: $main-color;
+        }
+      }
+   }
+  
+  #fp-faq{
+    .emphasis{
+      font-size: 1.75rem;
+    }
+    .faq-spacer{
+      background-color: $secondary-color;
+      width: 100%;
+      height: 5px;
+    }
+  }
+
 
 /* ==========================================================================
    PAYMENT
@@ -1455,7 +1618,7 @@ footer i:hover{
     display: -webkit-flex;
     justify-content: center;
     flex-flow: row wrap;
-    margin: 5% 0;
+    // margin: 5% 0;
     ul li{
       display: inline-block;
     }
@@ -1501,6 +1664,39 @@ button{
   width: 60%;
 }
 
+
+#testimonial-name{
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+  .testimonial-wrapper{
+    width: 80%;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    .testimonial-card{
+        background: rgba(1, 22, 39, 0.8);
+        color: white;
+        font-size: 1.5rem;
+        font-family: $font-sans-hairline;
+        padding: 2.5%;
+        min-height: 300px;
+        display: flex;
+        display: -webkit-flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row wrap;
+        span{
+          color: $secondary-color;
+          font-weight: 700;
+          line-height: 2.2;
+        }
+    }
+  }
+}
 
 /* ==========================================================================
    Helper classes
@@ -1838,6 +2034,38 @@ footer{
   }
 }
 
+// Freelance Plan Update
+
+#freelance-plan{
+  height: 500px;
+  aside{
+    width: 70%;
+    }
+}
+
+.fp-text{
+  div{
+        margin: 2.5% 0;
+        width: 60%;
+      }
+   }
+
+
+.fp-solution{
+  padding: 5% 0;
+  div{
+    margin: 2.5% 0;
+  }
+ }
+
+.fp-solution{
+article{
+  .card{
+    margin: 5% 0;
+    }
+}
+}
+
 }
 @media only screen and (min-width: 1200px) {
 
@@ -1949,6 +2177,58 @@ footer{
       width: 40%;
       margin: 0;
       padding: 2.5%;
+    }
+  }
+      div{
+      margin: 5% 0;
+    }
+
+}
+
+// Freelance Plan Update
+
+#freelance-plan{
+      height: 800px;
+      aside{
+      font-size: 2.5rem;
+      }
+    }
+
+.fp-solution{
+  div{
+    margin: 1.25%;
+  }
+  .fp-solution-wrapper{
+    padding: 2.5% 0 0 0;
+  }
+  #dream-life, #bonus{
+    width: 40%;
+    }
+}
+
+.fp-solution{
+article{
+  .card{
+    margin: 2.5% 0;
+    button{
+      width: 50%;
+    }
+    }
+}
+}
+
+  #calendly{
+    p{
+      margin: 2.5% 0;
+    }
+  }
+
+#testimonial-name{
+  .testimonial-wrapper{
+    .testimonial-card{
+        width: 30%;
+        margin: 2.5%;
+        min-height: 225px;
     }
   }
 }

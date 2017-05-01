@@ -989,7 +989,7 @@ body {
           line-height: 1.4; }
           .interest-list .wrapper .interest-list-description .il-header-description .familiar p {
             margin-bottom: 0.9rem;
-            font-size: 1rem; }
+            font-size: 1.5rem; }
             .interest-list .wrapper .interest-list-description .il-header-description .familiar p span {
               font-family: "Montserrat", sans-serif;
               font-weight: 700;
@@ -1030,6 +1030,8 @@ body {
       .interest-list .wrapper .convertkit aside {
         padding: 1.25% 0;
         font-size: 1.25rem; }
+        .interest-list .wrapper .convertkit aside p {
+          font-family: "Montserrat Hairline", sans-serif; }
         .interest-list .wrapper .convertkit aside i, .interest-list .wrapper .convertkit aside a {
           text-transform: uppercase; }
         .interest-list .wrapper .convertkit aside i {
@@ -1080,12 +1082,13 @@ body {
   justify-content: center;
   flex-flow: wrap row;
   text-align: left;
-  width: 100%; }
+  width: 100%;
+  background-color: #2EC4B6; }
   .fp-dark div {
     width: 80%;
     font-size: 1.25rem;
     line-height: 1.4;
-    margin: 5% 0; }
+    margin: 0 0 5% 0; }
     .fp-dark div h2 {
       font-weight: 700;
       text-transform: uppercase;
@@ -1100,9 +1103,14 @@ body {
       .fp-dark div aside h3 {
         font-weight: 700;
         text-transform: uppercase;
-        color: #2EC4B6;
+        font-family: 'NarzissRegular-Drops';
+        text-transform: uppercase;
+        color: #011627;
         font-size: 1.5rem;
-        margin-bottom: .5rem; }
+        margin-bottom: .5rem;
+        font-size: 2rem;
+        text-decoration: underline;
+        text-decoration-color: #2EC4B6; }
       .fp-dark div aside i {
         color: #2EC4B6; }
     .fp-dark div .who-not i {
@@ -1175,8 +1183,129 @@ body {
   #wip-block-siab p {
     font-size: 1rem; }
 
+#calendly {
+  width: 100%; }
+  #calendly p {
+    font-size: 2rem; }
+  #calendly a {
+    color: #011627; }
+
 .social-media-photos img {
   display: none; }
+
+/* ==========================================================================
+   FREELANCE PLAN UPDATE
+   ========================================================================== */
+#freelance-plan-container span {
+  font-family: 'NarzissRegular-Drops';
+  text-transform: uppercase; }
+#freelance-plan-container .emphasis {
+  font-size: 2.5rem; }
+
+#freelance-plan {
+  background-color: #EEEEEE;
+  color: #011627;
+  font-family: "Montserrat Hairline", sans-serif;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../img/freelance-plan-aleia-walker.jpg") top center;
+  background-size: cover;
+  height: 600px; }
+  #freelance-plan aside {
+    font-size: 1.75rem;
+    color: white;
+    width: 80%; }
+    #freelance-plan aside .display {
+      text-transform: uppercase; }
+    #freelance-plan aside span {
+      font-family: "Montserrat Light", sans-serif;
+      color: #2EC4B6; }
+    #freelance-plan aside p {
+      background: rgba(1, 22, 39, 0.6);
+      padding: 5% 2.5%; }
+
+.fp-text {
+  background-color: white;
+  color: #011627;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 1.5rem; }
+  .fp-text div {
+    margin: 5% 0;
+    width: 80%; }
+    .fp-text div p {
+      margin: 2rem 0; }
+
+.fp-solution {
+  background: url("../img/beach-sea-freelance.jpg") 100%;
+  background-size: cover;
+  color: #011627;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  width: 100%;
+  padding: 10% 0; }
+  .fp-solution .emphasis {
+    margin: 0 0 1.25% 0; }
+  .fp-solution div, .fp-solution article {
+    margin: 2.5% 0;
+    width: 80%; }
+    .fp-solution div p, .fp-solution article p {
+      margin: 2rem 0; }
+  .fp-solution ul li {
+    display: block;
+    font-size: 1.25rem;
+    text-align: left;
+    line-height: 1.6; }
+  .fp-solution .fp-solution-wrapper {
+    background: rgba(255, 255, 255, 0.6);
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    padding: 5% 0 0 0; }
+  .fp-solution article {
+    width: 100%;
+    background: rgba(46, 196, 182, 0.6);
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    margin: 2.5% 0 0 0;
+    font-size: 1.5rem; }
+    .fp-solution article .card {
+      margin: 10% 0; }
+      .fp-solution article .card button {
+        padding: 1rem 0;
+        font-size: 1.5rem;
+        background-color: #E71D36; }
+        .fp-solution article .card button a {
+          font-size: 1rem;
+          font-weight: 400; }
+    .fp-solution article p {
+      margin: .5rem 0; }
+  .fp-solution .plan-savings {
+    font-size: 1rem;
+    font-family: "Montserrat Hairline", sans-serif;
+    font-style: italic;
+    margin: 0; }
+    .fp-solution .plan-savings a {
+      color: #011627; }
+
+#fp-faq .emphasis {
+  font-size: 1.75rem; }
+#fp-faq .faq-spacer {
+  background-color: #2EC4B6;
+  width: 100%;
+  height: 5px; }
 
 /* ==========================================================================
    PAYMENT
@@ -1191,8 +1320,7 @@ body {
   display: flex;
   display: -webkit-flex;
   justify-content: center;
-  flex-flow: row wrap;
-  margin: 5% 0; }
+  flex-flow: row wrap; }
   .gumroad article ul li {
     display: inline-block; }
   .gumroad article .payment-plan span {
@@ -1221,6 +1349,35 @@ body {
 
 .lower-purchase {
   width: 60%; }
+
+#testimonial-name {
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  align-items: center; }
+  #testimonial-name .testimonial-wrapper {
+    width: 80%;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap; }
+    #testimonial-name .testimonial-wrapper .testimonial-card {
+      background: rgba(1, 22, 39, 0.8);
+      color: white;
+      font-size: 1.5rem;
+      font-family: "Montserrat Hairline", sans-serif;
+      padding: 2.5%;
+      min-height: 300px;
+      display: flex;
+      display: -webkit-flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: row wrap; }
+      #testimonial-name .testimonial-wrapper .testimonial-card span {
+        color: #2EC4B6;
+        font-weight: 700;
+        line-height: 2.2; }
 
 /* ==========================================================================
    Helper classes
@@ -1439,7 +1596,24 @@ body {
     margin: 2.5% 0; }
 
   .fp-dark div aside {
-    margin: 5% 0 0 0; } }
+    margin: 5% 0 0 0; }
+
+  #freelance-plan {
+    height: 500px; }
+    #freelance-plan aside {
+      width: 70%; }
+
+  .fp-text div {
+    margin: 2.5% 0;
+    width: 60%; }
+
+  .fp-solution {
+    padding: 5% 0; }
+    .fp-solution div {
+      margin: 2.5% 0; }
+
+  .fp-solution article .card {
+    margin: 5% 0; } }
 @media only screen and (min-width: 1200px) {
   .welcome-left {
     width: 40%;
@@ -1511,7 +1685,34 @@ body {
     .fp-dark .fit-container aside {
       width: 40%;
       margin: 0;
-      padding: 2.5%; } }
+      padding: 2.5%; }
+  .fp-dark div {
+    margin: 5% 0; }
+
+  #freelance-plan {
+    height: 800px; }
+    #freelance-plan aside {
+      font-size: 2.5rem; }
+
+  .fp-solution div {
+    margin: 1.25%; }
+  .fp-solution .fp-solution-wrapper {
+    padding: 2.5% 0 0 0; }
+  .fp-solution #dream-life, .fp-solution #bonus {
+    width: 40%; }
+
+  .fp-solution article .card {
+    margin: 2.5% 0; }
+    .fp-solution article .card button {
+      width: 50%; }
+
+  #calendly p {
+    margin: 2.5% 0; }
+
+  #testimonial-name .testimonial-wrapper .testimonial-card {
+    width: 30%;
+    margin: 2.5%;
+    min-height: 225px; } }
 @media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */ }
 /* ==========================================================================

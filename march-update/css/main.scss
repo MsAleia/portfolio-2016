@@ -1699,6 +1699,40 @@ button{
 }
 
 /* ==========================================================================
+   Links
+   ========================================================================== */
+#links{
+  background-color: $standard-grey;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  .links-wrapper{
+    width: 60%;
+    margin: 5% 0;
+    figure img{
+      border-radius: 50%;
+      width: 60vw;
+      max-width: 400px;
+      margin-bottom: 5%;
+    }
+    h1{
+      @include font-display;
+      font-size: 1.75rem;
+      line-height: 2;
+    }
+    article{
+      div{
+        background-color: $main-color;
+        padding: 5%;
+        margin: 5%;
+      }
+    }
+  }
+}
+
+/* ==========================================================================
    Helper classes
    ========================================================================== */
 
@@ -2066,6 +2100,21 @@ article{
 }
 }
 
+#links{
+  .links-wrapper{
+    h1{
+      @include font-display;
+      font-size:  2.5rem;
+      line-height: 3;
+    }
+    article{
+      div{
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
 }
 @media only screen and (min-width: 1200px) {
 
@@ -2229,6 +2278,31 @@ article{
         width: 30%;
         margin: 2.5%;
         min-height: 225px;
+    }
+  }
+}
+
+#links{
+  .links-wrapper{
+    figure img{
+      margin-bottom: 0;
+    }
+    h1{
+      @include font-display;
+      font-size: 2.5rem;
+      line-height: 3;
+    }
+    article{
+      display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+      div{
+        width: 40%;
+        padding: 2.5%;
+        margin: 1.25%;
+      }
     }
   }
 }

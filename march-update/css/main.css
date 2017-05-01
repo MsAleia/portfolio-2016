@@ -1380,6 +1380,34 @@ body {
         line-height: 2.2; }
 
 /* ==========================================================================
+   Links
+   ========================================================================== */
+#links {
+  background-color: #E3E3E3;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap; }
+  #links .links-wrapper {
+    width: 60%;
+    margin: 5% 0; }
+    #links .links-wrapper figure img {
+      border-radius: 50%;
+      width: 60vw;
+      max-width: 400px;
+      margin-bottom: 5%; }
+    #links .links-wrapper h1 {
+      font-family: 'NarzissRegular-Drops';
+      text-transform: uppercase;
+      font-size: 1.75rem;
+      line-height: 2; }
+    #links .links-wrapper article div {
+      background-color: #011627;
+      padding: 5%;
+      margin: 5%; }
+
+/* ==========================================================================
    Helper classes
    ========================================================================== */
 /*
@@ -1613,7 +1641,15 @@ body {
       margin: 2.5% 0; }
 
   .fp-solution article .card {
-    margin: 5% 0; } }
+    margin: 5% 0; }
+
+  #links .links-wrapper h1 {
+    font-family: 'NarzissRegular-Drops';
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    line-height: 3; }
+  #links .links-wrapper article div {
+    font-size: 1.5rem; } }
 @media only screen and (min-width: 1200px) {
   .welcome-left {
     width: 40%;
@@ -1712,7 +1748,25 @@ body {
   #testimonial-name .testimonial-wrapper .testimonial-card {
     width: 30%;
     margin: 2.5%;
-    min-height: 225px; } }
+    min-height: 225px; }
+
+  #links .links-wrapper figure img {
+    margin-bottom: 0; }
+  #links .links-wrapper h1 {
+    font-family: 'NarzissRegular-Drops';
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    line-height: 3; }
+  #links .links-wrapper article {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap; }
+    #links .links-wrapper article div {
+      width: 40%;
+      padding: 2.5%;
+      margin: 1.25%; } }
 @media print, (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 1.25dppx), (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */ }
 /* ==========================================================================

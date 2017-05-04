@@ -1408,6 +1408,76 @@ body {
       margin: 5%; }
 
 /* ==========================================================================
+   EMAIL THANK YOU
+   ========================================================================== */
+#email-thank-you {
+  background-color: #E3E3E3;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap; }
+  #email-thank-you header {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    background: url("../img/freelance-plan-aleia-walker.jpg");
+    background-position: center top;
+    background-size: cover;
+    width: 100%; }
+    #email-thank-you header figure img {
+      max-height: 100px;
+      margin: 5% 0;
+      width: 100%; }
+    #email-thank-you header .header-content {
+      padding: 2.5% 0;
+      width: 100%;
+      display: flex;
+      display: -webkit-flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: row wrap; }
+      #email-thank-you header .header-content div {
+        background: rgba(1, 22, 39, 0.6);
+        padding: 5%;
+        width: 75%; }
+        #email-thank-you header .header-content div h1 {
+          font-family: 'NarzissRegular-Drops';
+          text-transform: uppercase;
+          font-size: 3.25rem;
+          color: #2EC4B6;
+          margin-bottom: 2.5%; }
+        #email-thank-you header .header-content div p {
+          color: #E3E3E3;
+          font-size: 1.25rem;
+          line-height: 1.3; }
+  #email-thank-you .thank-you-content {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5% 0;
+    text-align: left; }
+    #email-thank-you .thank-you-content .thank-you-content-wrapper {
+      width: 80%;
+      font-size: 1.25rem; }
+      #email-thank-you .thank-you-content .thank-you-content-wrapper ul {
+        text-align: left;
+        margin: 2.5% 0; }
+        #email-thank-you .thank-you-content .thank-you-content-wrapper ul li {
+          display: block; }
+        #email-thank-you .thank-you-content .thank-you-content-wrapper ul i {
+          font-size: .75rem; }
+      #email-thank-you .thank-you-content .thank-you-content-wrapper button {
+        background-color: #E71D36;
+        margin: 1.5rem 0; }
+        #email-thank-you .thank-you-content .thank-you-content-wrapper button a {
+          color: white;
+          font-size: 1.25rem; }
+
+/* ==========================================================================
    Helper classes
    ========================================================================== */
 /*

@@ -228,7 +228,6 @@ button{
   border: none;
   width: 100%;
   font-size: 1rem;
-  font-weight: 700;
   box-sizing: border-box;
   padding: 2.5%;
   font-family: $font-regular;
@@ -305,6 +304,10 @@ main{
     margin: 2.5%;
     text-transform: uppercase;
   }
+}
+
+.main-menu-home li{
+  text-align: right;
 }
 /* ==========================================================================
    MENU STYLES

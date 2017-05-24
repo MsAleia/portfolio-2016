@@ -1571,6 +1571,11 @@ footer i:hover{
           padding: 1rem 0;
           font-size: 1.5rem;
           background-color: $button-color;
+          p{
+            width: 80%;
+            text-align: center;
+            margin: 0 10%;
+          }
           a{
             font-size: 1rem;
             font-weight: 400;
@@ -1861,12 +1866,26 @@ button{
    }
 
 #freelance-library-content{
-    background: url();
     background-color: $main-color;
     .fp-solution-wrapper{
       background-color: rgba(255, 255, 255, 0.6);
     }
   }
+
+#email-thank-you{
+  span{
+      @include font-display;
+      text-transform: uppercase;
+    }
+    h2{
+      text-transform: uppercase;
+      font-size: 2.5rem;
+    }
+    .fp-solution{
+      background-color: $main-color;
+      background: url();
+    }
+}
 
   #freelance-library-container{
     span{

@@ -1289,6 +1289,10 @@ body {
         padding: 1rem 0;
         font-size: 1.5rem;
         background-color: #E71D36; }
+        .fp-solution article .card button p {
+          width: 80%;
+          text-align: center;
+          margin: 0 10%; }
         .fp-solution article .card button a {
           font-size: 1rem;
           font-weight: 400; }
@@ -1509,10 +1513,20 @@ body {
       margin: 1.25% 0; }
 
 #freelance-library-content {
-  background: url();
   background-color: #011627; }
   #freelance-library-content .fp-solution-wrapper {
     background-color: rgba(255, 255, 255, 0.6); }
+
+#email-thank-you span {
+  font-family: 'NarzissRegular-Drops';
+  text-transform: uppercase;
+  text-transform: uppercase; }
+#email-thank-you h2 {
+  text-transform: uppercase;
+  font-size: 2.5rem; }
+#email-thank-you .fp-solution {
+  background-color: #011627;
+  background: url(); }
 
 #freelance-library-container span {
   font-family: 'NarzissRegular-Drops';

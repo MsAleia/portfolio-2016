@@ -1768,6 +1768,10 @@ button{
           width: 100%;
         }
       }
+      #gift{
+        background: url();
+        background-color: $accent-grey !important;
+      }
       .header-content{
         padding: 2.5% 0;
         width: 100%;
@@ -1829,7 +1833,85 @@ button{
     }
   }
 
+// GIFT THANK YOU
 
+#gift-thank-you{
+    background-color: $standard-grey;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    .gift-wrapper{
+      min-height: 100vh;
+      background-color: white;
+      display: flex;
+      display: -webkit-flex;
+      justify-content: space-around;
+      flex-flow: row wrap;
+      max-width: 968px;
+      width: 90%;
+    }
+    header{
+      display: flex;
+      display: -webkit-flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-flow: column wrap;
+      background-color: white;
+      width: 100%;
+      figure{
+        background-color: $main-color;
+        width: 100%; 
+        img{
+          max-height: 100px;
+          margin: 2.5% 0;
+          width: 100%;
+        }
+      }
+      .header-content{
+        padding: 2.5% 0;
+        width: 100%;
+        display: flex;
+        display: -webkit-flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: row wrap;
+        div{
+        // background: rgba(1, 22, 39, 0.6);
+        padding: 5%;
+        width: 75%;
+        h1{
+          @include font-display;
+          font-size: 3.25rem;
+          color: $secondary-color;
+          margin-bottom: 2.5%;
+        }
+        p{
+          // color: $standard-grey;
+          font-size: 1.25rem;
+          line-height: 1.3;
+        }
+      }
+      }
+    }
+      .fp-text{
+      button{
+          background-color: $button-color;
+          margin: .5rem 0;
+          padding: 1%;
+          max-width: 500px;
+          p{
+            margin: 1em 0;
+          a{
+            color: white;
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+  }
+
+    
 
 /* ==========================================================================
     Freelance Library

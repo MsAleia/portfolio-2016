@@ -1437,6 +1437,9 @@ body {
       max-height: 100px;
       margin: 5% 0;
       width: 100%; }
+    #email-thank-you header #gift {
+      background: url();
+      background-color: #EEEEEE !important; }
     #email-thank-you header .header-content {
       padding: 2.5% 0;
       width: 100%;
@@ -1482,6 +1485,67 @@ body {
         #email-thank-you .thank-you-content .thank-you-content-wrapper button a {
           color: white;
           font-size: 1.25rem; }
+
+#gift-thank-you {
+  background-color: #E3E3E3;
+  display: flex;
+  display: -webkit-flex;
+  justify-content: center;
+  flex-flow: row wrap; }
+  #gift-thank-you .gift-wrapper {
+    min-height: 100vh;
+    background-color: white;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    max-width: 968px;
+    width: 90%; }
+  #gift-thank-you header {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: column wrap;
+    background-color: white;
+    width: 100%; }
+    #gift-thank-you header figure {
+      background-color: #011627;
+      width: 100%; }
+      #gift-thank-you header figure img {
+        max-height: 100px;
+        margin: 2.5% 0;
+        width: 100%; }
+    #gift-thank-you header .header-content {
+      padding: 2.5% 0;
+      width: 100%;
+      display: flex;
+      display: -webkit-flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: row wrap; }
+      #gift-thank-you header .header-content div {
+        padding: 5%;
+        width: 75%; }
+        #gift-thank-you header .header-content div h1 {
+          font-family: 'NarzissRegular-Drops';
+          text-transform: uppercase;
+          font-size: 3.25rem;
+          color: #2EC4B6;
+          margin-bottom: 2.5%; }
+        #gift-thank-you header .header-content div p {
+          font-size: 1.25rem;
+          line-height: 1.3; }
+  #gift-thank-you .fp-text button {
+    background-color: #E71D36;
+    margin: .5rem 0;
+    padding: 1%;
+    max-width: 500px; }
+    #gift-thank-you .fp-text button p {
+      margin: 1em 0; }
+      #gift-thank-you .fp-text button p a {
+        color: white;
+        font-size: 2rem; }
 
 /* ==========================================================================
     Freelance Library

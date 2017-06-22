@@ -231,9 +231,11 @@ main {
   justify-content: center;
   align-items: center; }
 
-#home-menu {
+#home-menu,
+#resources-menu {
   padding-top: 1em; }
-  #home-menu li {
+  #home-menu li,
+  #resources-menu li {
     display: block;
     margin: 2.5%;
     text-transform: uppercase; }
@@ -1694,11 +1696,13 @@ body {
     flex-flow: wrap row;
     justify-content: space-around; }
 
-  #home-menu {
+  #home-menu,
+  #resources-menu {
     width: 40%;
     padding-left: 2.5%;
     padding-top: 0; }
-    #home-menu li {
+    #home-menu li,
+    #resources-menu li {
       display: inline;
       font-size: 1.5rem; }
 

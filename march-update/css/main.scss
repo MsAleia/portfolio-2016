@@ -2000,6 +2000,72 @@ button{
       text-decoration: line-through;
       color: $button-color;
     }
+
+
+
+/* ==========================================================================
+    Email segmenting redirects
+   ========================================================================== */
+.email-redirect{
+  header{
+    background: url(../img/aleia-walker-email-header.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 600px;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+    p{
+      @include font-display;
+      font-size:  5rem;
+      line-height: 3;
+      color: $secondary-color;
+    }
+  }
+  .before-ul{
+    margin: 2rem 0 1.5rem 0;
+  }
+  ul{ 
+    margin-bottom: 2rem;
+    li{
+      display: block;
+      font-size: 1.25rem;
+      line-height: 1.75;
+    }
+  }
+  section{
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 2.5%;
+    p{
+      font-size: 1.25rem;
+      line-height: 1.75;
+    }
+    div{
+      margin: 5% 0;
+      max-width: 960px;
+    }
+  }
+  .emphasis{
+    text-transform: uppercase;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+  }
+  footer{
+    background-color: $main-color;
+    color: white;
+    display: flex;
+    display: -webkit-flex;
+    justify-content: center;
+    align-items: center;
+    padding: .75em 0;
+  }
+}
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
